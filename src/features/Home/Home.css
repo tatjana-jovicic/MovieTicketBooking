@@ -1,12 +1,74 @@
 .home_page {
-  height: 100vh;
-  background-image: url("../../assets/red-chair-room.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
   text-align: center;
+  padding-top: 6rem;
+  /* font-family: sans-serif; */
+}
+
+.home_page_con {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.home_con_left {
+  max-width: 900px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.home_con_left h1 {
+  font-size: 40px;
+  width: 100%;
+  padding-top: 3rem;
+}
+
+.home_con_left h2 {
+  font-size: 22px;
+}
+
+.home_con_right {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.home_con_right img {
+  width: 30%;
+  max-width: 350px;
+  border-radius: 15px;
+  border: 1px solid rgba(128, 128, 128, 0.493);
+}
+
+@media only screen and (max-width: 650px) {
+  .home_con_left {
+    padding: 3rem 1rem 0;
+  }
+
+  .home_con_left h1 {
+    font-size: 35px;
+  }
+
+  .home_con_left h2 {
+    font-size: 20px;
+  }
+
+  .home_con_right {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .home_con_right img {
+    width: 70%;
+  }
 }
