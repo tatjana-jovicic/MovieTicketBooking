@@ -2,8 +2,16 @@ import "./Home.css";
 import Cinema1 from "../../assets/cinema1.jpg";
 import Cinema2 from "../../assets/cinema2.webp";
 import Cinema3 from "../../assets/cinema3.jpg";
+import Button from "../../components/Button/Button";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const router = useNavigate();
+
+  const handleClickButton = () => {
+    router("/book_movie");
+  };
+
   return (
     <div className="home_page">
       <div className="home_page_con">
@@ -12,6 +20,10 @@ const Home = () => {
           <h2>
             "You're just a step away from enjoyment – book your ticket on time!"
           </h2>
+          <Button
+            buttonText="Book Movie"
+            handleButtonOnClick={handleClickButton}
+          />
         </div>
         <div className="home_con_right">
           <img src={Cinema1} alt="img of cinema1" />
