@@ -3,12 +3,14 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #191925;
-  color: white;
+  background-image: url("../../assets/red-chair-room.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 .navigation hr {
   border: 1px solid rgba(255, 255, 255, 0.686);
