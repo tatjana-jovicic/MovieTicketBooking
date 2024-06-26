@@ -4,8 +4,8 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* color: rgba(255, 255, 255, 0.87);
+  background-color: #242424; */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -28,8 +28,13 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #191925;
+  /* background-color: #191925; */
   color: white;
+  background-image: url("./assets/red-chair-room.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 h1 {
