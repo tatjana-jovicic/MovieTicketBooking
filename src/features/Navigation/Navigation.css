@@ -11,11 +11,15 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+  z-index: 1000;
 }
+
 .navigation hr {
   border: 1px solid rgba(255, 255, 255, 0.686);
   width: 100%;
+  margin-top: auto;
 }
+
 .nav {
   display: flex;
   gap: 5rem;
@@ -23,8 +27,9 @@
   justify-content: center;
   width: 100%;
   text-align: center;
-  padding: 5px 0px;
+  padding: 1px 0px;
 }
+
 .nav_links {
   display: flex;
   gap: 20px;
@@ -33,15 +38,62 @@
   text-align: center;
   cursor: pointer;
 }
+
 .nav a {
   color: white;
   border: 0.5px solid #19192500;
   padding: 10px;
 }
+
 .nav_links a:hover,
 .nav_links a.active-link {
   border: 0.5px solid white;
   border-radius: 15px;
   padding: 10px;
   color: white;
+}
+.navigation button {
+  padding: 5px;
+  margin: 0;
+  border: none;
+}
+.menu-icon {
+  display: none;
+  font-size: 25px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: white;
+}
+
+.menu-icon:focus {
+  outline: none;
+}
+@media (max-width: 650px) {
+  .nav {
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    transition: max-height 0.3s ease-out;
+    background-color: rgba(74, 54, 54, 0.586);
+  }
+
+  .nav.open {
+    max-height: 500px;
+    padding: 5px 5px;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav_links {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .nav a {
+    border: 0.1px solid #19192500;
+  }
 }
