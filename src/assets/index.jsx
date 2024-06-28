@@ -2,6 +2,7 @@ import phone from "./phone.png";
 import email from "./email.png";
 import web from "./web.png";
 
+/* -------------------------------------CONTACT PAGE--------------- */
 const Phone = () => {
   return (
     <img className="contact_page_left_logo" src={phone} alt="phone icon" />

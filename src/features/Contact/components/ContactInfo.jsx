@@ -11,7 +11,7 @@ const ContactInfo = () => {
     {
       logo: <Email />,
       title: "Email",
-      description: "tatjanajovicic19@gmail.com",
+      description: "movieticket@gmail.com",
     },
     {
       logo: <Web />,
