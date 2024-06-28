@@ -48,6 +48,13 @@ const Navigation = () => {
             How To Book
           </Link>
           <Link
+            to="/location"
+            className={location.pathname === "/location" ? "active-link" : ""}
+            onClick={closeMenu}
+          >
+            Location
+          </Link>
+          <Link
             to="/contact"
             className={location.pathname === "/contact" ? "active-link" : ""}
             onClick={closeMenu}
