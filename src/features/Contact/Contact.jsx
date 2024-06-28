@@ -15,7 +15,6 @@ const Contact = () => {
           <ContactInfo />
         </div>
         <div className="contact_con_right">
-          {/* <h2>Contact Us</h2> */}
           <form className="form">
             <label>Name</label>
             <input type="text" placeholder="Enter your Name" />
