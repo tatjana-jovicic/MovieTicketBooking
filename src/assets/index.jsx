@@ -1,9 +1,15 @@
+// import dropdown from "./dropdown.png";
 import city from "./city.png";
 import location from "./location.png";
 import clock from "./clock.png";
 import phone from "./phone.png";
 import email from "./email.png";
 import web from "./web.png";
+
+/* -------------------------------------BOOK MOVIE PAGE--------------- */
+// const Dropdown = () => {
+//   return <img className="dropdown-icon" src={dropdown} alt="dropdown icon" />;
+// };
 
 /* -------------------------------------LOACATION PAGE--------------- */
 const City = () => {
