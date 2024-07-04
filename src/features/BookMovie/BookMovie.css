@@ -128,11 +128,10 @@
   width: 100%;
   max-width: 200px;
   height: 250px;
-  border-radius: 10px;
   cursor: pointer;
 }
 .movie_name {
-  border-radius: 15px;
+  border-radius: 10px;
   background-color: rgba(45, 12, 12, 0.508);
   cursor: pointer;
 }

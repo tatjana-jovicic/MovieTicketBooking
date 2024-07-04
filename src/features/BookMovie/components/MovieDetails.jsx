@@ -1,5 +1,6 @@
 import "./styles/MovieDetails.css";
 import useSelectMovieStore from "../../../stores/select_movie/selectMovie.store";
+import MovieRating from "./MovieRating";
 
 const MovieDetails = ({ movie }) => {
   const selectedMovie = useSelectMovieStore((state) => state.selectedMovie);
@@ -8,7 +9,7 @@ const MovieDetails = ({ movie }) => {
     return <div>Loading...</div>;
   }
 
-  // Koristimo proslijeđeni `movie` ako postoji, inače koristimo `selectedMovie`
+  //koristimo proslijedjeni 'movie' ako postoji, inace koristimo 'selectedMovie'
   const displayMovie = movie || selectedMovie;
 
   return (
@@ -17,7 +18,10 @@ const MovieDetails = ({ movie }) => {
         <div className="detail_con_left">
           <div className="con_left_detail">
             <h2>{displayMovie.name}</h2>
-            <p> {displayMovie.rating}</p>
+            <p>
+              {" "}
+              <MovieRating rating={displayMovie.rating} />
+            </p>
             <p>
               2024 | {displayMovie.time} | {displayMovie.genre}
             </p>
