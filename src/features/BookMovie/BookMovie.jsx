@@ -33,7 +33,7 @@ const BookMovie = () => {
         <div className="book_movie_con_left">
           <div className="dropdown">
             <button>
-              Genre
+              Choose genre
               <img src={Dropdown} alt="dropdown icon" />
             </button>
             <div className="dropdown-content">
