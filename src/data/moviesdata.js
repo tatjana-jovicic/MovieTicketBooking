@@ -7,6 +7,16 @@ import F_FaultInOurStars from "../assets/movies/f_fault_in_our_stars.webp";
 import F_IdeaOfYou from "../assets/movies/f_idea_of_you.jpg";
 import F_WildRobot from "../assets/movies/f_wild_robot.jpg";
 import F_RedNotice from "../assets/movies/f_red_notice.jpg";
+import F_ArtOfLove from "../assets/movies/f_art_of_love.jpg";
+import F_MrMalcolmsList from "../assets/movies/f_mr_malcolms_list.jpg";
+import F_HalloweenEnds from "../assets/movies/f_halloween_ends.jpg";
+import F_VikingWolf from "../assets/movies/f_viking_wolf.jpg";
+import F_Aquaman from "../assets/movies/f_aquaman.webp";
+import F_Uncharted from "../assets/movies/f_uncharted.jpg";
+import F_MonkeyKing from "../assets/movies/f_monkey_king.jpg";
+import F_Lift from "../assets/movies/f_lift.jpg";
+import F_FamilySwitch from "../assets/movies/f_family_switch.jpg";
+import F_Players from "../assets/movies/f_players.jpg";
 
 export const movies = [
   {
@@ -90,7 +100,7 @@ export const movies = [
     rating: 5,
     genre: "Romance",
     starring: "Shailene Woodley, Ansel Elgort, Nat Wolff",
-    group: "recommended",
+    // group: "recommended",
     video: "https://www.youtube.com/embed/9ItBvH5J6ss?si=wC9wD-jjWkFAw8g3",
   },
   {
@@ -132,8 +142,148 @@ export const movies = [
     rating: 5,
     genre: "Comedy",
     starring: "Dwayne Johnson, Ryan Reynolds, Gal Gadot ",
-    group: "recommended",
+    // group: "recommended",
     video: "https://www.youtube.com/embed/Pj0wz7zu3Ms?si=nAC50riJdhX-HyC9",
+  },
+  {
+    id: 10,
+    name: "Art of Love",
+    price: 110,
+    image: F_ArtOfLove,
+    description:
+      "After learning that the art thief she has been chasing is her ex-lover, an officer working for Interpol concocts a plan to catch him red-handed.",
+    time: "1h 39m",
+    rating: 3,
+    genre: "Romance",
+    starring: "Birkan Sokullu, Esra Bilgiç, Firat Taniş",
+    group: "recommended",
+    video: "https://www.youtube.com/embed/f77agh-CZ-c?si=hkr5KsyJIapCAHYp",
+  },
+  {
+    id: 11,
+    name: "Mr. Malcolm's List",
+    price: 110,
+    image: F_MrMalcolmsList,
+    description:
+      "A young woman rebuffed by London's most selective bachelor enlists her childhood friend to assume the role of his ideal mate — solely to break his heart.",
+    time: "1h 57m",
+    rating: 5,
+    genre: "Comedy",
+    starring: "Freida Pinto, Ṣọpẹ Dìrísù, Oliver Jackson-Cohen",
+    // group: "recommended",
+    video: "https://www.youtube.com/embed/4ONCEOWbl4s?si=3fDYo8uTH14X9EsC",
+  },
+  {
+    id: 12,
+    name: "Halloween Ends",
+    price: 112,
+    image: F_HalloweenEnds,
+    description:
+      "Attempting to build a new life with her granddaughter, Laurie Strode suspects a new round of mysterious deaths is linked to masked killer Michael Myers.",
+    time: "1h 50m",
+    rating: 2,
+    genre: "Horror",
+    starring: "Jamie Lee Curtis, Andi Matichak, Rohan Campbell ",
+    group: "recommended",
+    video: "https://www.youtube.com/embed/i_mAWKyfj6c?si=N3TUACQZC6zCZqBz",
+  },
+  {
+    id: 13,
+    name: "Viking Wolf",
+    price: 105,
+    image: F_VikingWolf,
+    description:
+      "After witnessing a grotesque murder at a party in her new town, a teenager starts having strange visions and bizarre desires.",
+    time: "1h 38m",
+    rating: 4,
+    genre: "Horror",
+    starring: "Elli Müller Osborne, Liv Mjönes, Arthur Hakalahti",
+    group: "recommended",
+    video: "https://www.youtube.com/embed/6sxnOLRGkhw?si=_CGlPfBlHgUvgh5O",
+  },
+  {
+    id: 14,
+    name: "Aquaman",
+    price: 110,
+    image: F_Aquaman,
+    description:
+      "Amphibious superhero Arthur Curry learns what it means to be Aquaman when he must stop the king of Atlantis from waging war against the surface world.",
+    time: "2h 23m",
+    rating: 5,
+    genre: "Action",
+    starring: "Jason Momoa, Amber Heard, Willem Dafoe",
+    // group: "recommended",
+    video: "https://www.youtube.com/embed/2wcj6SrX4zw?si=8sTWC-9BCXE807OE",
+  },
+  {
+    id: 15,
+    name: "Uncharted",
+    price: 115,
+    image: F_Uncharted,
+    description:
+      "Street-smart treasure hunter Nathan Drake and his renegade mentor Sully set out on a dangerous adventure across the globe to find Magellan's lost gold.",
+    time: "1h 56m",
+    rating: 3,
+    genre: "Action",
+    starring: "Tom Holland, Mark Wahlberg, Antonio Banderas",
+    group: "recommended",
+    video: "https://www.youtube.com/embed/4wCH1K-ckZw?si=roLfOqfiq-H9qVXg",
+  },
+  {
+    id: 16,
+    name: "The Monkey King",
+    price: 110,
+    image: F_MonkeyKing,
+    description:
+      "A stick-wielding monkey teams with a young girl on an epic quest for immortality, battling demons, dragons, gods — and his own ego — along the way.",
+    time: "1h 36m",
+    rating: 4,
+    genre: "Animation",
+    starring: "Jimmy O. Yang, Bowen Yang, Jolie Hoang-Rappaport",
+    group: "recommended",
+    video: "https://www.youtube.com/embed/-Ao79QJNE-s?si=n2U-8PXNvtjOtluj",
+  },
+  {
+    id: 17,
+    name: "Lift",
+    price: 110,
+    image: F_Lift,
+    description:
+      "A professional thief and his expert crew attempt the ultimate heist: stealing $500 million in gold from a vault on a plane — 40,000 feet in the air.",
+    time: "1h 46m",
+    rating: 5,
+    genre: "Action",
+    starring: "Kevin Hart, Gugu Mbatha-Raw, Vincent D'Onofrio",
+    // group: "recommended",
+    video: "https://www.youtube.com/embed/m2L-Sa_6MU0?si=obhGVs8X2vf7wJWF",
+  },
+  {
+    id: 18,
+    name: "Family Switch",
+    price: 110,
+    image: F_FamilySwitch,
+    description:
+      "A family descends into chaos days before Christmas when a rare cosmic event causes the parents to swap bodies with their teenage kids.",
+    time: "1h 45m",
+    rating: 4,
+    genre: "Comedy",
+    starring: "Jennifer Garner, Ed Helms, Emma Myers",
+    group: "recommended",
+    video: "https://www.youtube.com/embed/SWh4c9EVqGM?si=J89v4ih_QXdyjQgk",
+  },
+  {
+    id: 19,
+    name: "Players",
+    price: 115,
+    image: F_Players,
+    description:
+      "A New York sports writer with a playbook of clever hookup schemes unexpectedly falls for a fling. Can she go from playing the field to playing for keeps?",
+    time: "1h 45m",
+    rating: 3,
+    genre: "Comedy",
+    starring: "Gina Rodriguez, Damon Wayans Jr., Tom Ellis",
+    group: "recommended",
+    video: "https://www.youtube.com/embed/8gH6AEBwEAw?si=7Xg4UliaLHr2iLcG",
   },
 ];
 
