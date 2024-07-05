@@ -31,7 +31,7 @@ export const movies = [
     genre: "Romance",
     starring: "Adam Driver, Marion Cotillard, Simon Helberg",
     group: "new",
-    // video: "https://www.youtube.com/embed/dRuKrWbSzLA?si=gphRThGu_4LFVTRn",
+    video: "https://www.youtube.com/embed/dRuKrWbSzLA?si=gphRThGu_4LFVTRn",
     availableDates: {
       "2024-07-08": ["10:00", "14:00", "18:00"],
       "2024-07-09": ["12:00", "16:00", "20:00"],
