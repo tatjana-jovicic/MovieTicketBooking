@@ -29,7 +29,7 @@ const MovieDetails = ({ movie }) => {
             <img src={displayMovie.image} alt={displayMovie.name} />
           </div>
           <div className="con_left_video">
-            {/* <iframe
+            <iframe
               width="600"
               height="350"
               src={displayMovie.video}
@@ -38,7 +38,7 @@ const MovieDetails = ({ movie }) => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
-            ></iframe> */}
+            ></iframe>
           </div>
         </div>
         <div className="detail_con_right">
