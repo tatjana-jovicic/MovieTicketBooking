@@ -5,7 +5,7 @@
 // import Slider from "react-slick";
 
 // const NewMovies = () => {
-// const newMovies = movies.filter((movie) => movie.group === "new");
+//   const newMovies = movies.filter((movie) => movie.group === "new");
 // const settings = {
 //   dots: true,
 //   infinite: newMovies.length > 5,
@@ -45,20 +45,18 @@
 //   return (
 //     <>
 //       <div className="movies">
-//         {newMovies.map((movie) => (
-//           <div className="movie_list" key={movie.id}>
-//             <img src={movie.image} alt={movie.name} />
-//             <div className="movie_name">
-//               <h3>{movie.name}</h3>
+//         <Slider {...settings}>
+//           {newMovies.map((movie) => (
+//             <div className="movie_list" key={movie.id}>
+//               <img src={movie.image} alt={movie.name} />
+//               <div className="movie_name">
+//                 <h3>{movie.name}</h3>
+//               </div>
 //             </div>
-//           </div>
-//         ))}
+//           ))}
+//         </Slider>
 //       </div>
 //     </>
 //   );
 // };
-// export default NewMovies;
-// import MovieList from "./MovieList";
-
-// const NewMovies = () => <MovieList filter="group" filterValue="new" />;
 // export default NewMovies;
