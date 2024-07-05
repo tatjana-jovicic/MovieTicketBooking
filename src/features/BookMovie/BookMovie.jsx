@@ -5,13 +5,15 @@ import MovieList from "./components/MovieList";
 import useGenreStore from "../../stores/genre/genre.store";
 import Button from "../../components/Button/Button";
 import MovieDetails from "./components/MovieDetails";
-import { useState } from "react";
-// import useSelectMovieStore from "../../stores/select_movie/selectMovie.store";
+import useSelectMovieStore from "../../stores/select_movie/selectMovie.store";
 
 const BookMovie = () => {
   const selectedGenre = useGenreStore((state) => state.selectedGenre);
   const setSelectedGenre = useGenreStore((state) => state.setSelectedGenre);
-  const [selectedMovie, setSelectedMovie] = useState(null);
+  const selectedMovie = useSelectMovieStore((state) => state.selectedMovie);
+  const setSelectedMovie = useSelectMovieStore(
+    (state) => state.setSelectedMovie
+  );
 
   const handleGenreClick = (genre) => {
     setSelectedGenre(genre);
@@ -22,10 +24,6 @@ const BookMovie = () => {
     setSelectedGenre("");
     setSelectedMovie(null);
   };
-
-  // const handleMovieClick = (movie) => {
-  //   setSelectedMovie(movie);
-  // };
 
   return (
     <div className="book_movie_page">

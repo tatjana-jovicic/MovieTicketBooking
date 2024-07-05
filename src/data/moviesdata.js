@@ -31,7 +31,12 @@ export const movies = [
     genre: "Romance",
     starring: "Adam Driver, Marion Cotillard, Simon Helberg",
     group: "new",
-    video: "https://www.youtube.com/embed/dRuKrWbSzLA?si=gphRThGu_4LFVTRn",
+    // video: "https://www.youtube.com/embed/dRuKrWbSzLA?si=gphRThGu_4LFVTRn",
+    availableDates: {
+      "2024-07-08": ["10:00", "14:00", "18:00"],
+      "2024-07-09": ["12:00", "16:00", "20:00"],
+      "2024-07-10": ["11:00", "15:00", "19:00"],
+    },
   },
   {
     id: 2,
@@ -45,7 +50,7 @@ export const movies = [
     genre: "Action",
     starring: "Jessica Chastain, John Malkovich",
     group: "new",
-    video: "https://www.youtube.com/embed/oRKQAk2Kwbg?si=BbM_KFXrLadpTBrQ",
+    // video: "https://www.youtube.com/embed/oRKQAk2Kwbg?si=BbM_KFXrLadpTBrQ",
   },
   {
     id: 3,
@@ -59,7 +64,7 @@ export const movies = [
     genre: "Animation",
     starring: "Karl Urban, Zaris-Angel Hator",
     group: "new",
-    video: "https://www.youtube.com/embed/P-E-IGQCsPo?si=CuMvOJhCh6YbntqX",
+    // video: "https://www.youtube.com/embed/P-E-IGQCsPo?si=CuMvOJhCh6YbntqX",
   },
   {
     id: 4,
@@ -73,7 +78,7 @@ export const movies = [
     genre: "Animation",
     starring: "Bob Peterson, Andrew Stanton",
     group: "new",
-    video: "https://www.youtube.com/embed/3JNLwlcPBPI?si=g0X-LWULr3PaDBXx",
+    // video: "https://www.youtube.com/embed/3JNLwlcPBPI?si=g0X-LWULr3PaDBXx",
   },
   {
     id: 5,
@@ -87,7 +92,7 @@ export const movies = [
     genre: "Horror",
     starring: "Dylan DeVane, Tatum Bates ",
     group: "new",
-    video: "https://www.youtube.com/embed/qmGxKLyBtl0?si=qVyp1cFfM5TKrVbl",
+    // video: "https://www.youtube.com/embed/qmGxKLyBtl0?si=qVyp1cFfM5TKrVbl",
   },
   {
     id: 6,
@@ -101,7 +106,7 @@ export const movies = [
     genre: "Romance",
     starring: "Shailene Woodley, Ansel Elgort, Nat Wolff",
     // group: "recommended",
-    video: "https://www.youtube.com/embed/9ItBvH5J6ss?si=wC9wD-jjWkFAw8g3",
+    // video: "https://www.youtube.com/embed/9ItBvH5J6ss?si=wC9wD-jjWkFAw8g3",
   },
   {
     id: 7,
@@ -115,7 +120,7 @@ export const movies = [
     genre: "Romance",
     starring: "Anne Hathaway, Nicholas Galitzine ",
     group: "new",
-    video: "https://www.youtube.com/embed/sef6dNsKxeA?si=7xiew1t1Y7ZUa9dU",
+    // video: "https://www.youtube.com/embed/sef6dNsKxeA?si=7xiew1t1Y7ZUa9dU",
   },
   {
     id: 8,
@@ -129,7 +134,7 @@ export const movies = [
     genre: "Animation",
     starring: "Lupita Nyong'o, Pedro Pascal ",
     group: "new",
-    video: "https://www.youtube.com/embed/67vbA5ZJdKQ?si=y_yiPYZaTh6kRI_9",
+    // video: "https://www.youtube.com/embed/67vbA5ZJdKQ?si=y_yiPYZaTh6kRI_9",
   },
   {
     id: 9,
@@ -143,7 +148,7 @@ export const movies = [
     genre: "Comedy",
     starring: "Dwayne Johnson, Ryan Reynolds, Gal Gadot ",
     // group: "recommended",
-    video: "https://www.youtube.com/embed/Pj0wz7zu3Ms?si=nAC50riJdhX-HyC9",
+    // video: "https://www.youtube.com/embed/Pj0wz7zu3Ms?si=nAC50riJdhX-HyC9",
   },
   {
     id: 10,
@@ -157,7 +162,7 @@ export const movies = [
     genre: "Romance",
     starring: "Birkan Sokullu, Esra Bilgiç, Firat Taniş",
     group: "recommended",
-    video: "https://www.youtube.com/embed/f77agh-CZ-c?si=hkr5KsyJIapCAHYp",
+    // video: "https://www.youtube.com/embed/f77agh-CZ-c?si=hkr5KsyJIapCAHYp",
   },
   {
     id: 11,
@@ -171,7 +176,7 @@ export const movies = [
     genre: "Comedy",
     starring: "Freida Pinto, Ṣọpẹ Dìrísù, Oliver Jackson-Cohen",
     // group: "recommended",
-    video: "https://www.youtube.com/embed/4ONCEOWbl4s?si=3fDYo8uTH14X9EsC",
+    // video: "https://www.youtube.com/embed/4ONCEOWbl4s?si=3fDYo8uTH14X9EsC",
   },
   {
     id: 12,
@@ -185,7 +190,7 @@ export const movies = [
     genre: "Horror",
     starring: "Jamie Lee Curtis, Andi Matichak, Rohan Campbell ",
     group: "recommended",
-    video: "https://www.youtube.com/embed/i_mAWKyfj6c?si=N3TUACQZC6zCZqBz",
+    // video: "https://www.youtube.com/embed/i_mAWKyfj6c?si=N3TUACQZC6zCZqBz",
   },
   {
     id: 13,
@@ -199,7 +204,7 @@ export const movies = [
     genre: "Horror",
     starring: "Elli Müller Osborne, Liv Mjönes, Arthur Hakalahti",
     group: "recommended",
-    video: "https://www.youtube.com/embed/6sxnOLRGkhw?si=_CGlPfBlHgUvgh5O",
+    // video: "https://www.youtube.com/embed/6sxnOLRGkhw?si=_CGlPfBlHgUvgh5O",
   },
   {
     id: 14,
@@ -213,7 +218,7 @@ export const movies = [
     genre: "Action",
     starring: "Jason Momoa, Amber Heard, Willem Dafoe",
     // group: "recommended",
-    video: "https://www.youtube.com/embed/2wcj6SrX4zw?si=8sTWC-9BCXE807OE",
+    // video: "https://www.youtube.com/embed/2wcj6SrX4zw?si=8sTWC-9BCXE807OE",
   },
   {
     id: 15,
@@ -227,7 +232,7 @@ export const movies = [
     genre: "Action",
     starring: "Tom Holland, Mark Wahlberg, Antonio Banderas",
     group: "recommended",
-    video: "https://www.youtube.com/embed/4wCH1K-ckZw?si=roLfOqfiq-H9qVXg",
+    // video: "https://www.youtube.com/embed/4wCH1K-ckZw?si=roLfOqfiq-H9qVXg",
   },
   {
     id: 16,
@@ -241,7 +246,7 @@ export const movies = [
     genre: "Animation",
     starring: "Jimmy O. Yang, Bowen Yang, Jolie Hoang-Rappaport",
     group: "recommended",
-    video: "https://www.youtube.com/embed/-Ao79QJNE-s?si=n2U-8PXNvtjOtluj",
+    // video: "https://www.youtube.com/embed/-Ao79QJNE-s?si=n2U-8PXNvtjOtluj",
   },
   {
     id: 17,
@@ -255,7 +260,7 @@ export const movies = [
     genre: "Action",
     starring: "Kevin Hart, Gugu Mbatha-Raw, Vincent D'Onofrio",
     // group: "recommended",
-    video: "https://www.youtube.com/embed/m2L-Sa_6MU0?si=obhGVs8X2vf7wJWF",
+    // video: "https://www.youtube.com/embed/m2L-Sa_6MU0?si=obhGVs8X2vf7wJWF",
   },
   {
     id: 18,
@@ -269,7 +274,7 @@ export const movies = [
     genre: "Comedy",
     starring: "Jennifer Garner, Ed Helms, Emma Myers",
     group: "recommended",
-    video: "https://www.youtube.com/embed/SWh4c9EVqGM?si=J89v4ih_QXdyjQgk",
+    // video: "https://www.youtube.com/embed/SWh4c9EVqGM?si=J89v4ih_QXdyjQgk",
   },
   {
     id: 19,
@@ -283,7 +288,7 @@ export const movies = [
     genre: "Comedy",
     starring: "Gina Rodriguez, Damon Wayans Jr., Tom Ellis",
     group: "recommended",
-    video: "https://www.youtube.com/embed/8gH6AEBwEAw?si=7Xg4UliaLHr2iLcG",
+    // video: "https://www.youtube.com/embed/8gH6AEBwEAw?si=7Xg4UliaLHr2iLcG",
   },
 ];
 
