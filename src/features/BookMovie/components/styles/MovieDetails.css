@@ -13,6 +13,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding-bottom: 1rem;
 }
 
 .detail_con_left {
@@ -43,19 +44,53 @@
 }
 .detail_con_right {
   width: 100%;
-  max-width: 800px;
-  color: black;
+  max-width: 700px;
+  color: white;
   margin: auto;
   padding-top: 1rem;
+  padding-bottom: 1rem;
   display: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   border-radius: 10px;
+  font-weight: 500;
+  background-color: rgba(139, 27, 27, 0.663);
 }
 .date_picker {
   width: 100%;
   max-width: 500px;
   padding: 1rem 1rem;
   margin: auto;
+}
+.movie_hall {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+.con_right_details {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.con_right_details input {
+  width: 29%;
+  border-radius: 10px;
+  border: none;
+  padding: 13px;
+  color: white;
+  background-color: rgba(226, 208, 208, 0.566);
+}
+.con_right_details input::placeholder {
+  color: rgb(236, 226, 226);
+}
+.pay_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
