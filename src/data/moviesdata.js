@@ -63,6 +63,23 @@ export const movies = [
     starring: "Jessica Chastain, John Malkovich",
     group: "new",
     // video: "https://www.youtube.com/embed/oRKQAk2Kwbg?si=BbM_KFXrLadpTBrQ",
+    availableDates: {
+      "2024-07-22": [
+        { time: "17:00", hall: "A1" },
+        { time: "20:00", hall: "A1" },
+        { time: "24:00", hall: "A1" },
+      ],
+      "2024-07-23": [
+        { time: "16:00", hall: "A3" },
+        { time: "16:30", hall: "A2" },
+        { time: "20:00", hall: "A1" },
+      ],
+      "2024-07-24": [
+        { time: "15:00", hall: "A2" },
+        { time: "18:00", hall: "A2" },
+        { time: "19:00", hall: "B3" },
+      ],
+    },
   },
   {
     id: 3,
@@ -77,6 +94,23 @@ export const movies = [
     starring: "Karl Urban, Zaris-Angel Hator",
     group: "new",
     // video: "https://www.youtube.com/embed/P-E-IGQCsPo?si=CuMvOJhCh6YbntqX",
+    availableDates: {
+      "2024-07-22": [
+        { time: "17:00", hall: "A1" },
+        { time: "20:00", hall: "A1" },
+        { time: "24:00", hall: "A1" },
+      ],
+      "2024-07-23": [
+        { time: "16:00", hall: "A3" },
+        { time: "16:30", hall: "A2" },
+        { time: "20:00", hall: "A1" },
+      ],
+      "2024-07-24": [
+        { time: "15:00", hall: "A2" },
+        { time: "18:00", hall: "A2" },
+        { time: "19:00", hall: "B3" },
+      ],
+    },
   },
   {
     id: 4,
@@ -91,6 +125,23 @@ export const movies = [
     starring: "Bob Peterson, Andrew Stanton",
     group: "new",
     // video: "https://www.youtube.com/embed/3JNLwlcPBPI?si=g0X-LWULr3PaDBXx",
+    availableDates: {
+      "2024-07-22": [
+        { time: "17:00", hall: "A1" },
+        { time: "20:00", hall: "A1" },
+        { time: "24:00", hall: "A1" },
+      ],
+      "2024-07-23": [
+        { time: "16:00", hall: "A3" },
+        { time: "16:30", hall: "A2" },
+        { time: "20:00", hall: "A1" },
+      ],
+      "2024-07-24": [
+        { time: "15:00", hall: "A2" },
+        { time: "18:00", hall: "A2" },
+        { time: "19:00", hall: "B3" },
+      ],
+    },
   },
   {
     id: 5,
@@ -105,6 +156,23 @@ export const movies = [
     starring: "Dylan DeVane, Tatum Bates ",
     group: "new",
     // video: "https://www.youtube.com/embed/qmGxKLyBtl0?si=qVyp1cFfM5TKrVbl",
+    availableDates: {
+      "2024-07-22": [
+        { time: "17:00", hall: "A1" },
+        { time: "20:00", hall: "A1" },
+        { time: "24:00", hall: "A1" },
+      ],
+      "2024-07-23": [
+        { time: "16:00", hall: "A3" },
+        { time: "16:30", hall: "A2" },
+        { time: "20:00", hall: "A1" },
+      ],
+      "2024-07-24": [
+        { time: "15:00", hall: "A2" },
+        { time: "18:00", hall: "A2" },
+        { time: "19:00", hall: "B3" },
+      ],
+    },
   },
   {
     id: 6,
@@ -119,6 +187,23 @@ export const movies = [
     starring: "Shailene Woodley, Ansel Elgort, Nat Wolff",
     // group: "recommended",
     // video: "https://www.youtube.com/embed/9ItBvH5J6ss?si=wC9wD-jjWkFAw8g3",
+    availableDates: {
+      "2024-07-22": [
+        { time: "17:00", hall: "A1" },
+        { time: "20:00", hall: "A1" },
+        { time: "24:00", hall: "A1" },
+      ],
+      "2024-07-23": [
+        { time: "16:00", hall: "A3" },
+        { time: "16:30", hall: "A2" },
+        { time: "20:00", hall: "A1" },
+      ],
+      "2024-07-24": [
+        { time: "15:00", hall: "A2" },
+        { time: "18:00", hall: "A2" },
+        { time: "19:00", hall: "B3" },
+      ],
+    },
   },
   {
     id: 7,
@@ -133,6 +218,23 @@ export const movies = [
     starring: "Anne Hathaway, Nicholas Galitzine ",
     group: "new",
     // video: "https://www.youtube.com/embed/sef6dNsKxeA?si=7xiew1t1Y7ZUa9dU",
+    availableDates: {
+      "2024-07-22": [
+        { time: "17:00", hall: "A1" },
+        { time: "20:00", hall: "A1" },
+        { time: "24:00", hall: "A1" },
+      ],
+      "2024-07-23": [
+        { time: "16:00", hall: "A3" },
+        { time: "16:30", hall: "A2" },
+        { time: "20:00", hall: "A1" },
+      ],
+      "2024-07-24": [
+        { time: "15:00", hall: "A2" },
+        { time: "18:00", hall: "A2" },
+        { time: "19:00", hall: "B3" },
+      ],
+    },
   },
   {
     id: 8,
@@ -147,6 +249,23 @@ export const movies = [
     starring: "Lupita Nyong'o, Pedro Pascal ",
     group: "new",
     // video: "https://www.youtube.com/embed/67vbA5ZJdKQ?si=y_yiPYZaTh6kRI_9",
+    availableDates: {
+      "2024-07-22": [
+        { time: "17:00", hall: "A1" },
+        { time: "20:00", hall: "A1" },
+        { time: "24:00", hall: "A1" },
+      ],
+      "2024-07-23": [
+        { time: "16:00", hall: "A3" },
+        { time: "16:30", hall: "A2" },
+        { time: "20:00", hall: "A1" },
+      ],
+      "2024-07-24": [
+        { time: "15:00", hall: "A2" },
+        { time: "18:00", hall: "A2" },
+        { time: "19:00", hall: "B3" },
+      ],
+    },
   },
   {
     id: 9,
@@ -161,6 +280,23 @@ export const movies = [
     starring: "Dwayne Johnson, Ryan Reynolds, Gal Gadot ",
     // group: "recommended",
     // video: "https://www.youtube.com/embed/Pj0wz7zu3Ms?si=nAC50riJdhX-HyC9",
+    availableDates: {
+      "2024-07-22": [
+        { time: "17:00", hall: "A1" },
+        { time: "20:00", hall: "A1" },
+        { time: "24:00", hall: "A1" },
+      ],
+      "2024-07-23": [
+        { time: "16:00", hall: "A3" },
+        { time: "16:30", hall: "A2" },
+        { time: "20:00", hall: "A1" },
+      ],
+      "2024-07-24": [
+        { time: "15:00", hall: "A2" },
+        { time: "18:00", hall: "A2" },
+        { time: "19:00", hall: "B3" },
+      ],
+    },
   },
   {
     id: 10,
@@ -175,6 +311,23 @@ export const movies = [
     starring: "Birkan Sokullu, Esra Bilgiç, Firat Taniş",
     group: "recommended",
     // video: "https://www.youtube.com/embed/f77agh-CZ-c?si=hkr5KsyJIapCAHYp",
+    availableDates: {
+      "2024-07-22": [
+        { time: "17:00", hall: "A1" },
+        { time: "20:00", hall: "A1" },
+        { time: "24:00", hall: "A1" },
+      ],
+      "2024-07-23": [
+        { time: "16:00", hall: "A3" },
+        { time: "16:30", hall: "A2" },
+        { time: "20:00", hall: "A1" },
+      ],
+      "2024-07-24": [
+        { time: "15:00", hall: "A2" },
+        { time: "18:00", hall: "A2" },
+        { time: "19:00", hall: "B3" },
+      ],
+    },
   },
   {
     id: 11,
@@ -189,6 +342,23 @@ export const movies = [
     starring: "Freida Pinto, Ṣọpẹ Dìrísù, Oliver Jackson-Cohen",
     // group: "recommended",
     // video: "https://www.youtube.com/embed/4ONCEOWbl4s?si=3fDYo8uTH14X9EsC",
+    availableDates: {
+      "2024-07-22": [
+        { time: "17:00", hall: "A1" },
+        { time: "20:00", hall: "A1" },
+        { time: "24:00", hall: "A1" },
+      ],
+      "2024-07-23": [
+        { time: "16:00", hall: "A3" },
+        { time: "16:30", hall: "A2" },
+        { time: "20:00", hall: "A1" },
+      ],
+      "2024-07-24": [
+        { time: "15:00", hall: "A2" },
+        { time: "18:00", hall: "A2" },
+        { time: "19:00", hall: "B3" },
+      ],
+    },
   },
   {
     id: 12,
@@ -203,6 +373,23 @@ export const movies = [
     starring: "Jamie Lee Curtis, Andi Matichak, Rohan Campbell ",
     group: "recommended",
     // video: "https://www.youtube.com/embed/i_mAWKyfj6c?si=N3TUACQZC6zCZqBz",
+    availableDates: {
+      "2024-07-22": [
+        { time: "17:00", hall: "A1" },
+        { time: "20:00", hall: "A1" },
+        { time: "24:00", hall: "A1" },
+      ],
+      "2024-07-23": [
+        { time: "16:00", hall: "A3" },
+        { time: "16:30", hall: "A2" },
+        { time: "20:00", hall: "A1" },
+      ],
+      "2024-07-24": [
+        { time: "15:00", hall: "A2" },
+        { time: "18:00", hall: "A2" },
+        { time: "19:00", hall: "B3" },
+      ],
+    },
   },
   {
     id: 13,
@@ -217,6 +404,23 @@ export const movies = [
     starring: "Elli Müller Osborne, Liv Mjönes, Arthur Hakalahti",
     group: "recommended",
     // video: "https://www.youtube.com/embed/6sxnOLRGkhw?si=_CGlPfBlHgUvgh5O",
+    availableDates: {
+      "2024-07-22": [
+        { time: "17:00", hall: "A1" },
+        { time: "20:00", hall: "A1" },
+        { time: "24:00", hall: "A1" },
+      ],
+      "2024-07-23": [
+        { time: "16:00", hall: "A3" },
+        { time: "16:30", hall: "A2" },
+        { time: "20:00", hall: "A1" },
+      ],
+      "2024-07-24": [
+        { time: "15:00", hall: "A2" },
+        { time: "18:00", hall: "A2" },
+        { time: "19:00", hall: "B3" },
+      ],
+    },
   },
   {
     id: 14,
@@ -231,6 +435,23 @@ export const movies = [
     starring: "Jason Momoa, Amber Heard, Willem Dafoe",
     // group: "recommended",
     // video: "https://www.youtube.com/embed/2wcj6SrX4zw?si=8sTWC-9BCXE807OE",
+    availableDates: {
+      "2024-07-22": [
+        { time: "17:00", hall: "A1" },
+        { time: "20:00", hall: "A1" },
+        { time: "24:00", hall: "A1" },
+      ],
+      "2024-07-23": [
+        { time: "16:00", hall: "A3" },
+        { time: "16:30", hall: "A2" },
+        { time: "20:00", hall: "A1" },
+      ],
+      "2024-07-24": [
+        { time: "15:00", hall: "A2" },
+        { time: "18:00", hall: "A2" },
+        { time: "19:00", hall: "B3" },
+      ],
+    },
   },
   {
     id: 15,
@@ -245,6 +466,23 @@ export const movies = [
     starring: "Tom Holland, Mark Wahlberg, Antonio Banderas",
     group: "recommended",
     // video: "https://www.youtube.com/embed/4wCH1K-ckZw?si=roLfOqfiq-H9qVXg",
+    availableDates: {
+      "2024-07-22": [
+        { time: "17:00", hall: "A1" },
+        { time: "20:00", hall: "A1" },
+        { time: "24:00", hall: "A1" },
+      ],
+      "2024-07-23": [
+        { time: "16:00", hall: "A3" },
+        { time: "16:30", hall: "A2" },
+        { time: "20:00", hall: "A1" },
+      ],
+      "2024-07-24": [
+        { time: "15:00", hall: "A2" },
+        { time: "18:00", hall: "A2" },
+        { time: "19:00", hall: "B3" },
+      ],
+    },
   },
   {
     id: 16,
@@ -259,6 +497,23 @@ export const movies = [
     starring: "Jimmy O. Yang, Bowen Yang, Jolie Hoang-Rappaport",
     group: "recommended",
     // video: "https://www.youtube.com/embed/-Ao79QJNE-s?si=n2U-8PXNvtjOtluj",
+    availableDates: {
+      "2024-07-22": [
+        { time: "17:00", hall: "A1" },
+        { time: "20:00", hall: "A1" },
+        { time: "24:00", hall: "A1" },
+      ],
+      "2024-07-23": [
+        { time: "16:00", hall: "A3" },
+        { time: "16:30", hall: "A2" },
+        { time: "20:00", hall: "A1" },
+      ],
+      "2024-07-24": [
+        { time: "15:00", hall: "A2" },
+        { time: "18:00", hall: "A2" },
+        { time: "19:00", hall: "B3" },
+      ],
+    },
   },
   {
     id: 17,
@@ -273,6 +528,23 @@ export const movies = [
     starring: "Kevin Hart, Gugu Mbatha-Raw, Vincent D'Onofrio",
     // group: "recommended",
     // video: "https://www.youtube.com/embed/m2L-Sa_6MU0?si=obhGVs8X2vf7wJWF",
+    availableDates: {
+      "2024-07-22": [
+        { time: "17:00", hall: "A1" },
+        { time: "20:00", hall: "A1" },
+        { time: "24:00", hall: "A1" },
+      ],
+      "2024-07-23": [
+        { time: "16:00", hall: "A3" },
+        { time: "16:30", hall: "A2" },
+        { time: "20:00", hall: "A1" },
+      ],
+      "2024-07-24": [
+        { time: "15:00", hall: "A2" },
+        { time: "18:00", hall: "A2" },
+        { time: "19:00", hall: "B3" },
+      ],
+    },
   },
   {
     id: 18,
@@ -287,6 +559,23 @@ export const movies = [
     starring: "Jennifer Garner, Ed Helms, Emma Myers",
     group: "recommended",
     // video: "https://www.youtube.com/embed/SWh4c9EVqGM?si=J89v4ih_QXdyjQgk",
+    availableDates: {
+      "2024-07-22": [
+        { time: "17:00", hall: "A1" },
+        { time: "20:00", hall: "A1" },
+        { time: "24:00", hall: "A1" },
+      ],
+      "2024-07-23": [
+        { time: "16:00", hall: "A3" },
+        { time: "16:30", hall: "A2" },
+        { time: "20:00", hall: "A1" },
+      ],
+      "2024-07-24": [
+        { time: "15:00", hall: "A2" },
+        { time: "18:00", hall: "A2" },
+        { time: "19:00", hall: "B3" },
+      ],
+    },
   },
   {
     id: 19,
@@ -301,6 +590,23 @@ export const movies = [
     starring: "Gina Rodriguez, Damon Wayans Jr., Tom Ellis",
     group: "recommended",
     // video: "https://www.youtube.com/embed/8gH6AEBwEAw?si=7Xg4UliaLHr2iLcG",
+    availableDates: {
+      "2024-07-22": [
+        { time: "17:00", hall: "A1" },
+        { time: "20:00", hall: "A1" },
+        { time: "24:00", hall: "A1" },
+      ],
+      "2024-07-23": [
+        { time: "16:00", hall: "A3" },
+        { time: "16:30", hall: "A2" },
+        { time: "20:00", hall: "A1" },
+      ],
+      "2024-07-24": [
+        { time: "15:00", hall: "A2" },
+        { time: "18:00", hall: "A2" },
+        { time: "19:00", hall: "B3" },
+      ],
+    },
   },
 ];
 
