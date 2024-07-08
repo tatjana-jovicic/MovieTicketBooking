@@ -48,7 +48,7 @@ const ResponsiveDatePickers = () => {
           onChange={handleDateChange}
           shouldDisableDate={shouldDisableDate}
           sx={{
-            backgroundColor: "rgba(209, 174, 174, 0.748)",
+            backgroundColor: "rgba(226, 208, 208, 0.566)",
             borderRadius: "10px",
           }}
           renderInput={(params) => <TextField {...params} />}
@@ -58,16 +58,16 @@ const ResponsiveDatePickers = () => {
             fullWidth
             sx={{
               maxWidth: "230px",
-              backgroundColor: "rgba(209, 174, 174, 0.748)",
+              backgroundColor: "rgba(226, 208, 208, 0.566)",
               borderRadius: "10px",
             }}
           >
             <InputLabel
               id="time-select-label"
               sx={{
-                color: "black",
+                color: "white",
                 "&.Mui-focused": {
-                  color: "black",
+                  color: "white",
                 },
               }}
             >

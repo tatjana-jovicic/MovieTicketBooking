@@ -1,9 +1,10 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import "./styles/MovieDetails.css";
 import useSelectMovieStore from "../../../stores/select_movie/selectMovie.store";
 import useDateStore from "../../../stores/date/date.store.js";
 import MovieRating from "./MovieRating";
 import ResponsiveDatePickers from "./ResponsiveDatePickers";
+import Button from "../../../components/Button/Button.jsx";
 
 const MovieDetails = ({ movie }) => {
   const selectedMovie = useSelectMovieStore((state) => state.selectedMovie);
@@ -49,7 +50,18 @@ const MovieDetails = ({ movie }) => {
           <div className="date_picker">
             <ResponsiveDatePickers />
           </div>
-          <div className="nestooo">ostali podaci: {selectedMovieHall}</div>
+          <div className="movie_hall">
+            <p>Movie Hall: {selectedMovieHall}</p>
+            <p>Per ticket: ${displayMovie.price}</p>
+          </div>
+          <div className="num_seat">Number of Seats: </div>
+          <div className="con_right_details">
+            <input type="text" placeholder="Name..." />
+            <input type="text" placeholder="Email..." />
+          </div>
+          <div className="pay_button">
+            <Button buttonText="Proceed to Pay" />
+          </div>
         </div>
       </div>
     </div>
