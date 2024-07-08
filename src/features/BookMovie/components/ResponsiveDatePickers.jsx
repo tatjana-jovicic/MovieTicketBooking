@@ -8,7 +8,7 @@ import {
   InputLabel,
   TextField,
 } from "@mui/material";
-import useDateStore from "../../../stores/date/date.store";
+import useDateStore from "../../../stores/date/date.store.js";
 
 const ResponsiveDatePickers = () => {
   const {
@@ -47,20 +47,41 @@ const ResponsiveDatePickers = () => {
           value={selectedDate}
           onChange={handleDateChange}
           shouldDisableDate={shouldDisableDate}
+          sx={{
+            backgroundColor: "rgba(209, 174, 174, 0.748)",
+            borderRadius: "10px",
+          }}
           renderInput={(params) => <TextField {...params} />}
         />
         {availableTimes.length > 0 && (
-          <FormControl fullWidth style={{ maxWidth: "230px" }}>
-            <InputLabel id="time-select-label">Available Times</InputLabel>
+          <FormControl
+            fullWidth
+            sx={{
+              maxWidth: "230px",
+              backgroundColor: "rgba(209, 174, 174, 0.748)",
+              borderRadius: "10px",
+            }}
+          >
+            <InputLabel
+              id="time-select-label"
+              sx={{
+                color: "black",
+                "&.Mui-focused": {
+                  color: "black",
+                },
+              }}
+            >
+              Available Times
+            </InputLabel>
             <Select
               labelId="time-select-label"
               id="time-select"
               value={selectedTime}
               onChange={handleTimeChange}
             >
-              {availableTimes.map((time, index) => (
-                <MenuItem key={index} value={time}>
-                  {time}
+              {availableTimes.map((timeObj, index) => (
+                <MenuItem key={index} value={timeObj.time}>
+                  {timeObj.time}
                 </MenuItem>
               ))}
             </Select>

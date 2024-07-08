@@ -33,9 +33,21 @@ export const movies = [
     group: "new",
     video: "https://www.youtube.com/embed/dRuKrWbSzLA?si=gphRThGu_4LFVTRn",
     availableDates: {
-      "2024-07-08": ["10:00", "14:00", "18:00"],
-      "2024-07-09": ["12:00", "16:00", "20:00"],
-      "2024-07-10": ["11:00", "15:00", "19:00"],
+      "2024-07-22": [
+        { time: "17:00", hall: "A1" },
+        { time: "20:00", hall: "A1" },
+        { time: "24:00", hall: "A1" },
+      ],
+      "2024-07-23": [
+        { time: "16:00", hall: "A3" },
+        { time: "16:30", hall: "A2" },
+        { time: "20:00", hall: "A1" },
+      ],
+      "2024-07-24": [
+        { time: "15:00", hall: "A2" },
+        { time: "18:00", hall: "A2" },
+        { time: "19:00", hall: "B3" },
+      ],
     },
   },
   {
