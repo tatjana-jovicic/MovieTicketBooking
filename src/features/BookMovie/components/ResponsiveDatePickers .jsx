@@ -1,5 +1,3 @@
-import dayjs from "dayjs";
-import { useState } from "react";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
@@ -10,20 +8,30 @@ import {
   InputLabel,
   TextField,
 } from "@mui/material";
+import useDateStore from "../../../stores/date/date.store";
 
-const ResponsiveDatePickers = ({ availableDates }) => {
-  const [selectedDate, setSelectedDate] = useState(dayjs());
-  const [availableTimes, setAvailableTimes] = useState([]);
+const ResponsiveDatePickers = () => {
+  const {
+    selectedDate,
+    availableTimes,
+    selectedTime,
+    setSelectedDate,
+    setSelectedTime,
+  } = useDateStore();
 
   const handleDateChange = (date) => {
     setSelectedDate(date);
-    const formattedDate = date.format("YYYY-MM-DD");
-    setAvailableTimes(availableDates[formattedDate] || []);
+  };
+
+  const handleTimeChange = (event) => {
+    setSelectedTime(event.target.value);
   };
 
   const shouldDisableDate = (date) => {
     const formattedDate = date.format("YYYY-MM-DD");
-    return !availableDates.hasOwnProperty(formattedDate);
+    return !useDateStore
+      .getState()
+      .availableDates.hasOwnProperty(formattedDate);
   };
 
   return (
@@ -39,7 +47,7 @@ const ResponsiveDatePickers = ({ availableDates }) => {
           value={selectedDate}
           onChange={handleDateChange}
           shouldDisableDate={shouldDisableDate}
-          textField={(props) => <TextField {...props} />}
+          renderInput={(params) => <TextField {...params} />}
         />
         {availableTimes.length > 0 && (
           <FormControl fullWidth style={{ maxWidth: "230px" }}>
@@ -47,7 +55,8 @@ const ResponsiveDatePickers = ({ availableDates }) => {
             <Select
               labelId="time-select-label"
               id="time-select"
-              value={availableTimes.length > 0 ? availableTimes[0] : ""}
+              value={selectedTime}
+              onChange={handleTimeChange}
             >
               {availableTimes.map((time, index) => (
                 <MenuItem key={index} value={time}>

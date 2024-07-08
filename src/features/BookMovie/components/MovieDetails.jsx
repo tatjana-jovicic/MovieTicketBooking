@@ -1,14 +1,21 @@
+import React, { useEffect } from "react";
 import "./styles/MovieDetails.css";
 import useSelectMovieStore from "../../../stores/select_movie/selectMovie.store";
+import useDateStore from "../../../stores/date/date.store";
 import MovieRating from "./MovieRating";
 import ResponsiveDatePickers from "./ResponsiveDatePickers ";
 
 const MovieDetails = ({ movie }) => {
   const selectedMovie = useSelectMovieStore((state) => state.selectedMovie);
+  const { setAvailableDates } = useDateStore();
 
-  //koristimo proslijedjeni 'movie' ako postoji, inace koristimo 'selectedMovie'
+  // Koristimo proslijedjeni 'movie' ako postoji, inace koristimo 'selectedMovie'
   const displayMovie = movie || selectedMovie;
   const availableDates = movie.availableDates || [];
+
+  useEffect(() => {
+    setAvailableDates(availableDates);
+  }, [availableDates, setAvailableDates]);
 
   return (
     <div className="movie_detail">
@@ -16,9 +23,7 @@ const MovieDetails = ({ movie }) => {
         <div className="detail_con_left">
           <div className="con_left_detail">
             <h2>{displayMovie.name}</h2>
-
             <MovieRating rating={displayMovie.rating} />
-
             <p>
               2024 | {displayMovie.time} | {displayMovie.genre}
             </p>
@@ -43,7 +48,7 @@ const MovieDetails = ({ movie }) => {
         </div>
         <div className="detail_con_right">
           <div className="date_picker">
-            <ResponsiveDatePickers availableDates={availableDates} />
+            <ResponsiveDatePickers />
           </div>
           <div className="nestooo">ostali podaci</div>
         </div>
