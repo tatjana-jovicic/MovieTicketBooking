@@ -8,10 +8,17 @@ import Button from "../../../components/Button/Button.jsx";
 
 const MovieDetails = ({ movie }) => {
   const selectedMovie = useSelectMovieStore((state) => state.selectedMovie);
-  const { setAvailableDates, selectedMovieHall } = useDateStore();
+  const {
+    formattedDate,
+    selectedTime,
+    setAvailableDates,
+    selectedMovieHall,
+    selectedTimeType,
+    selectedTimePrice,
+  } = useDateStore();
 
   const displayMovie = movie || selectedMovie;
-  const availableDates = movie.availableDates || [];
+  const availableDates = displayMovie.availableDates || [];
 
   useEffect(() => {
     setAvailableDates(availableDates);
@@ -50,11 +57,31 @@ const MovieDetails = ({ movie }) => {
           <div className="date_picker">
             <ResponsiveDatePickers />
           </div>
-          <div className="movie_hall">
-            <p>Movie Hall: {selectedMovieHall}</p>
-            <p>Per ticket: ${displayMovie.price}</p>
+          <div className="details">
+            <table>
+              <tr>
+                <th> Selected Date</th>
+                <td>{formattedDate}</td>
+              </tr>
+              <tr>
+                <th>Selected Time </th>
+                <td>{selectedTime}</td>
+              </tr>
+              <tr>
+                <th>Movie Hall</th>
+                <td>{selectedMovieHall}</td>
+              </tr>
+              <tr>
+                <th>Price per ticket</th>
+                <td>${selectedTimePrice}</td>
+              </tr>
+              <tr>
+                <th>Type</th>
+                <td>{selectedTimeType}</td>
+              </tr>
+            </table>
           </div>
-          <div className="num_seat">Number of Seats: </div>
+          <div className="num_seats">Number of Seats:</div>
           <div className="con_right_details">
             <input type="text" placeholder="Name..." />
             <input type="text" placeholder="Email..." />

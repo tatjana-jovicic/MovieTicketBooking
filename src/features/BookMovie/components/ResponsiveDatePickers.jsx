@@ -51,7 +51,9 @@ const ResponsiveDatePickers = () => {
             backgroundColor: "rgba(226, 208, 208, 0.566)",
             borderRadius: "10px",
           }}
-          renderInput={(params) => <TextField {...params} />}
+          slots={{
+            textField: (params) => <TextField {...params} />,
+          }}
         />
         {availableTimes.length > 0 && (
           <FormControl
@@ -71,7 +73,7 @@ const ResponsiveDatePickers = () => {
                 },
               }}
             >
-              Available Times
+              Available Times and Types
             </InputLabel>
             <Select
               labelId="time-select-label"
@@ -81,7 +83,7 @@ const ResponsiveDatePickers = () => {
             >
               {availableTimes.map((timeObj, index) => (
                 <MenuItem key={index} value={timeObj.time}>
-                  {timeObj.time}
+                  {timeObj.time} ({timeObj.type}) - ${timeObj.price}
                 </MenuItem>
               ))}
             </Select>

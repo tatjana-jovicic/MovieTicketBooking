@@ -54,7 +54,6 @@
   align-items: center;
   text-align: center;
   border-radius: 10px;
-  font-weight: 500;
   background-color: rgba(139, 27, 27, 0.663);
 }
 .date_picker {
@@ -63,12 +62,38 @@
   padding: 1rem 1rem;
   margin: auto;
 }
-.movie_hall {
-  justify-content: center;
-  align-items: center;
+.details {
+  width: 50%;
+  max-width: 350px;
+  margin: auto;
   text-align: center;
-  gap: 2rem;
+  padding: 10px;
+  border-radius: 10px;
 }
+
+.details table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.details th,
+.details td {
+  padding: 8px;
+  border-bottom: 1px solid white;
+  color: white;
+}
+
+.details th {
+  text-align: left;
+  font-weight: 100;
+}
+
+.details td {
+  text-align: right;
+  font-weight: 500;
+}
+
 .con_right_details {
   width: 100%;
   display: flex;
