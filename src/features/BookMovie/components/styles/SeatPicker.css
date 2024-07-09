@@ -31,7 +31,6 @@
 .empty-seat {
   width: 20px;
   height: 20px;
-  /* border: none; */
 }
 
 .seat.selected {
@@ -45,4 +44,7 @@
 
 .selected-seats {
   margin-top: 10px;
+}
+.selected-seats span {
+  font-weight: 500;
 }

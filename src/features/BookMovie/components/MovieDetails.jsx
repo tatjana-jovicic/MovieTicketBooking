@@ -84,7 +84,26 @@ const MovieDetails = ({ movie }) => {
               </tbody>
             </table>
           </div>
-          <div className="num_seats">Number of Seats:</div>
+          <div className="num_seats">
+            Number of Seats:
+            <div className="quantity">
+              <span className="decrement">-</span>
+              <span>0</span>
+              <span className="increment">+</span>
+            </div>
+          </div>
+          <div className="info_seats">
+            <p>
+              <span className="empty"></span> Empty
+            </p>
+            <p>
+              <span className="selected"></span> Selected
+            </p>
+            <p>
+              <span className="occupied"></span> Occupied
+            </p>
+          </div>
+
           <div className="seat-picker">
             <SeatPicker />
           </div>

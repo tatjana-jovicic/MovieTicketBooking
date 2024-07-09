@@ -100,7 +100,9 @@ const SeatPicker = () => {
         ))}
       </div>
       <div className="selected-seats">
-        <p>Selected Seats: {selectedSeats.join(", ")}</p>
+        <p>
+          Selected Seats: <span>{selectedSeats.join(", ")}</span>
+        </p>
       </div>
     </div>
   );
