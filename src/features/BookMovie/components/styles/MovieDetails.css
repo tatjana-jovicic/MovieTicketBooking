@@ -93,7 +93,10 @@
   text-align: right;
   font-weight: 500;
 }
-
+.num_seats {
+  padding-top: 20px;
+  font-weight: 500;
+}
 .con_right_details {
   width: 100%;
   display: flex;
