@@ -83,7 +83,7 @@ const ResponsiveDatePickers = () => {
             >
               {availableTimes.map((timeObj, index) => (
                 <MenuItem key={index} value={timeObj.time}>
-                  {timeObj.time} ({timeObj.type}) - ${timeObj.price}
+                  {timeObj.time} ({timeObj.type})
                 </MenuItem>
               ))}
             </Select>

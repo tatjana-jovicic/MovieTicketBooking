@@ -5,6 +5,7 @@ import useDateStore from "../../../stores/date/date.store.js";
 import MovieRating from "./MovieRating";
 import ResponsiveDatePickers from "./ResponsiveDatePickers";
 import Button from "../../../components/Button/Button.jsx";
+import SeatPicker from "./SeatPicker.jsx";
 
 const MovieDetails = ({ movie }) => {
   const selectedMovie = useSelectMovieStore((state) => state.selectedMovie);
@@ -73,7 +74,7 @@ const MovieDetails = ({ movie }) => {
               </tr>
               <tr>
                 <th>Price per ticket</th>
-                <td>${selectedTimePrice}</td>
+                <td>${selectedTimePrice.toFixed(2)}</td>
               </tr>
               <tr>
                 <th>Type</th>
@@ -82,6 +83,9 @@ const MovieDetails = ({ movie }) => {
             </table>
           </div>
           <div className="num_seats">Number of Seats:</div>
+          <div className="seat-picker">
+            <SeatPicker />
+          </div>
           <div className="con_right_details">
             <input type="text" placeholder="Name..." />
             <input type="text" placeholder="Email..." />
