@@ -60,26 +60,28 @@ const MovieDetails = ({ movie }) => {
           </div>
           <div className="details">
             <table>
-              <tr>
-                <th> Selected Date</th>
-                <td>{formattedDate}</td>
-              </tr>
-              <tr>
-                <th>Selected Time </th>
-                <td>{selectedTime}</td>
-              </tr>
-              <tr>
-                <th>Movie Hall</th>
-                <td>{selectedMovieHall}</td>
-              </tr>
-              <tr>
-                <th>Price per ticket</th>
-                <td>${selectedTimePrice.toFixed(2)}</td>
-              </tr>
-              <tr>
-                <th>Type</th>
-                <td>{selectedTimeType}</td>
-              </tr>
+              <tbody>
+                <tr>
+                  <th>Selected Date</th>
+                  <td>{formattedDate}</td>
+                </tr>
+                <tr>
+                  <th>Selected Time</th>
+                  <td>{selectedTime}</td>
+                </tr>
+                <tr>
+                  <th>Movie Hall</th>
+                  <td>{selectedMovieHall}</td>
+                </tr>
+                <tr>
+                  <th>Price per ticket</th>
+                  <td>${selectedTimePrice.toFixed(2)}</td>
+                </tr>
+                <tr>
+                  <th>Type</th>
+                  <td>{selectedTimeType}</td>
+                </tr>
+              </tbody>
             </table>
           </div>
           <div className="num_seats">Number of Seats:</div>

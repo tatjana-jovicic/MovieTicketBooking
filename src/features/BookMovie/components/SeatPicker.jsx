@@ -17,7 +17,6 @@ const SeatPicker = () => {
       { id: "A7", label: "A7" },
       { id: "A8", label: "A8" },
     ],
-
     [
       { id: "B1", label: "B1" },
       { id: "B2", label: "B2" },
@@ -54,7 +53,6 @@ const SeatPicker = () => {
       { id: "D7", label: "D7" },
       { id: "D8", label: "D8" },
     ],
-
     [
       { id: "E1", label: "E1" },
       { id: "E2", label: "E2" },
