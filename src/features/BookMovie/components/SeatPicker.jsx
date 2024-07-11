@@ -1,9 +1,8 @@
-import { useState } from "react";
 import "./styles/SeatPicker.css";
+import useDateStore from "../../../stores/date/date.store.js";
 
 const SeatPicker = () => {
-  const [selectedSeats, setSelectedSeats] = useState([]);
-
+  const { selectedSeats, setSelectedSeats, quantity } = useDateStore();
   const seatMap = [
     [
       { id: "A1", label: "A1" },
@@ -68,19 +67,21 @@ const SeatPicker = () => {
   ];
 
   const handleSeatClick = (seatId) => {
+    let newSelectedSeats = [];
     if (selectedSeats.includes(seatId)) {
-      setSelectedSeats(selectedSeats.filter((seat) => seat !== seatId));
-    } else {
-      setSelectedSeats([...selectedSeats, seatId]);
+      newSelectedSeats = selectedSeats.filter((seat) => seat !== seatId);
+    } else if (selectedSeats.length < quantity) {
+      newSelectedSeats = [...selectedSeats, seatId];
     }
+    setSelectedSeats(newSelectedSeats);
   };
 
   return (
-    <div className="seat-picker">
+    <div className="seat_picker">
       <h3>Choose Your Seats:</h3>
-      <div className="seat-map">
+      <div className="seat_map">
         {seatMap.map((row, rowIndex) => (
-          <div key={`row-${rowIndex}`} className="seat-row">
+          <div key={`row-${rowIndex}`} className="seat_row">
             {row.map((seat, index) =>
               seat ? (
                 <div
@@ -93,13 +94,13 @@ const SeatPicker = () => {
                   {seat.label}
                 </div>
               ) : (
-                <div key={`empty-${index}`} className="empty-seat"></div>
+                <div key={`empty-${index}`} className="empty_seat"></div>
               )
             )}
           </div>
         ))}
       </div>
-      <div className="selected-seats">
+      <div className="selected_seats">
         <p>
           Selected Seats: <span>{selectedSeats.join(", ")}</span>
         </p>

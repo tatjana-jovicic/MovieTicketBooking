@@ -1,36 +1,29 @@
-.seat-picker {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 5px;
+.seat_picker {
   text-align: center;
+}
+
+.seat_map {
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
   align-items: center;
 }
 
-.seat-map {
+.seat_row {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  gap: 0.5rem;
 }
 
-.seat-row {
-  display: flex;
-  gap: 10px;
-}
-
-.seat {
-  width: 35px;
-  height: 35px;
-  line-height: 35px;
-  text-align: center;
-  border: 1px solid #ccc;
+.seat,
+.empty_seat {
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
   cursor: pointer;
-}
-
-.empty-seat {
-  width: 20px;
-  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .seat.selected {
@@ -38,13 +31,14 @@
   color: white;
 }
 
-.seat:hover {
-  background-color: rgba(226, 208, 208, 0.566);
+.empty_seat {
+  visibility: hidden;
 }
 
-.selected-seats {
-  margin-top: 10px;
+.selected_seats {
+  margin-top: 1rem;
 }
-.selected-seats span {
+
+.selected_seats span {
   font-weight: 500;
 }

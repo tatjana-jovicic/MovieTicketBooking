@@ -25,23 +25,28 @@
   text-align: center;
   padding-bottom: 2rem;
 }
+
 .detail_con_left img {
   width: 100%;
   max-width: 400px;
   height: 350px;
   cursor: pointer;
 }
+
 .con_left_detail {
   width: 30%;
   text-align: start;
 }
+
 .con_left_detail h2 {
   font-size: 40px;
   margin: 0;
 }
+
 .con_left_detail p {
   text-align: start;
 }
+
 .detail_con_right {
   width: 100%;
   max-width: 700px;
@@ -56,12 +61,14 @@
   border-radius: 10px;
   background-color: rgba(139, 27, 27, 0.663);
 }
+
 .date_picker {
   width: 100%;
   max-width: 500px;
   padding: 1rem 1rem;
   margin: auto;
 }
+
 .details {
   width: 50%;
   max-width: 350px;
@@ -93,6 +100,7 @@
   text-align: right;
   font-weight: 500;
 }
+
 .num_seats {
   display: flex;
   flex-direction: column;
@@ -101,6 +109,7 @@
   font-weight: 500;
   gap: 15px;
 }
+
 .quantity {
   display: flex;
   justify-content: center;
@@ -112,17 +121,21 @@
   width: 11%;
   height: 25px;
 }
+
 .quantity span {
   font-size: 15px;
   color: white;
   padding: 2px;
 }
+
 .increment {
   cursor: pointer;
 }
+
 .decrement {
   cursor: pointer;
 }
+
 .info_seats {
   display: flex;
   gap: 2rem;
@@ -143,6 +156,7 @@
   border: 1px solid white;
   display: inline-block;
 }
+
 .empty {
   background-color: transparent;
 }
@@ -155,26 +169,6 @@
   background-color: rgb(58, 99, 203);
 }
 
-.con_right_details {
-  width: 100%;
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
-  align-items: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-.con_right_details input {
-  width: 29%;
-  border-radius: 10px;
-  border: none;
-  padding: 13px;
-  color: white;
-  background-color: rgba(226, 208, 208, 0.566);
-}
-.con_right_details input::placeholder {
-  color: rgb(236, 226, 226);
-}
 .pay_button {
   display: flex;
   justify-content: center;
