@@ -1,11 +1,12 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./styles/MovieDetails.css";
 import useSelectMovieStore from "../../../stores/select_movie/selectMovie.store";
 import useDateStore from "../../../stores/date/date.store.js";
 import MovieRating from "./MovieRating";
 import ResponsiveDatePickers from "./ResponsiveDatePickers";
-import Button from "../../../components/Button/Button.jsx";
-import SeatPicker from "./SeatPicker.jsx";
+import Button from "../../../components/Button/Button";
+import SeatPicker from "./SeatPicker";
+import PaymentDialog from "./PaymentDialog";
 
 const MovieDetails = ({ movie }) => {
   const selectedMovie = useSelectMovieStore((state) => state.selectedMovie);
@@ -16,7 +17,11 @@ const MovieDetails = ({ movie }) => {
     selectedMovieHall,
     selectedTimeType,
     selectedTimePrice,
+    quantity,
+    setQuantity,
+    total,
   } = useDateStore();
+  const [dialogOpen, setDialogOpen] = useState(false);
 
   const displayMovie = movie || selectedMovie;
   const availableDates = displayMovie.availableDates || [];
@@ -24,6 +29,14 @@ const MovieDetails = ({ movie }) => {
   useEffect(() => {
     setAvailableDates(availableDates);
   }, [availableDates, setAvailableDates]);
+
+  const handleProceedToPay = () => {
+    setDialogOpen(true);
+  };
+
+  const handleCloseDialog = () => {
+    setDialogOpen(false);
+  };
 
   return (
     <div className="movie_detail">
@@ -81,15 +94,29 @@ const MovieDetails = ({ movie }) => {
                   <th>Type</th>
                   <td>{selectedTimeType}</td>
                 </tr>
+                <tr>
+                  <th>Total</th>
+                  <td>${total.toFixed(2)}</td>
+                </tr>
               </tbody>
             </table>
           </div>
           <div className="num_seats">
             Number of Seats:
             <div className="quantity">
-              <span className="decrement">-</span>
-              <span>0</span>
-              <span className="increment">+</span>
+              <span
+                className="decrement"
+                onClick={() => setQuantity(Math.max(0, quantity - 1))}
+              >
+                -
+              </span>
+              <span>{quantity}</span>
+              <span
+                className="increment"
+                onClick={() => setQuantity(quantity + 1)}
+              >
+                +
+              </span>
             </div>
           </div>
           <div className="info_seats">
@@ -103,19 +130,18 @@ const MovieDetails = ({ movie }) => {
               <span className="occupied"></span> Occupied
             </p>
           </div>
-
-          <div className="seat-picker">
+          <div>
             <SeatPicker />
           </div>
-          <div className="con_right_details">
-            <input type="text" placeholder="Name..." />
-            <input type="text" placeholder="Email..." />
-          </div>
           <div className="pay_button">
-            <Button buttonText="Proceed to Pay" />
+            <Button
+              buttonText="Proceed to Pay"
+              handleButtonOnClick={handleProceedToPay}
+            />
           </div>
         </div>
       </div>
+      <PaymentDialog open={dialogOpen} onClose={handleCloseDialog} />
     </div>
   );
 };
