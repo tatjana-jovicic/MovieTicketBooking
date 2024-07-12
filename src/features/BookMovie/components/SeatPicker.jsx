@@ -1,8 +1,21 @@
 import "./styles/SeatPicker.css";
 import useDateStore from "../../../stores/date/date.store.js";
+import useSelectMovieStore from "../../../stores/select_movie/selectMovie.store.js";
 
 const SeatPicker = () => {
-  const { selectedSeats, setSelectedSeats, quantity } = useDateStore();
+  const {
+    selectedSeats,
+    setSelectedSeats,
+    quantity,
+    occupiedSeats,
+    formattedDate,
+    selectedTime,
+  } = useDateStore();
+  const { selectedMovie } = useSelectMovieStore();
+  const movieKey = selectedMovie ? selectedMovie.name : "";
+  const occupiedKey = `${movieKey}_${formattedDate}_${selectedTime}`;
+  const occupiedSeatsForSelectedDateTime = occupiedSeats[occupiedKey] || [];
+
   const seatMap = [
     [
       { id: "A1", label: "A1" },
@@ -67,6 +80,10 @@ const SeatPicker = () => {
   ];
 
   const handleSeatClick = (seatId) => {
+    if (occupiedSeatsForSelectedDateTime.includes(seatId)) {
+      return;
+    }
+
     let newSelectedSeats = [];
     if (selectedSeats.includes(seatId)) {
       newSelectedSeats = selectedSeats.filter((seat) => seat !== seatId);
@@ -88,6 +105,10 @@ const SeatPicker = () => {
                   key={seat.id}
                   className={`seat ${
                     selectedSeats.includes(seat.id) ? "selected" : ""
+                  } ${
+                    occupiedSeatsForSelectedDateTime.includes(seat.id)
+                      ? "occupied"
+                      : ""
                   }`}
                   onClick={() => handleSeatClick(seat.id)}
                 >
