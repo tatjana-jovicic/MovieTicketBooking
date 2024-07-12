@@ -4,7 +4,6 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-top: 1rem;
 }
 
 .detail_con {
@@ -17,6 +16,16 @@
 }
 
 .detail_con_left {
+  display: column;
+}
+
+.detail_con_left button {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+
+.movie {
   width: 100%;
   display: flex;
   gap: 2rem;
@@ -26,7 +35,7 @@
   padding-bottom: 2rem;
 }
 
-.detail_con_left img {
+.movie img {
   width: 100%;
   max-width: 400px;
   height: 350px;

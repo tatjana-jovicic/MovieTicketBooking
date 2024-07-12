@@ -28,6 +28,7 @@ const useDateStore = create((set) => ({
         selectedTimePrice: times.length > 0 ? times[0].price : 0,
         quantity: times.length > 0 ? 1 : 0,
         total: times.length > 0 ? times[0].price : 0,
+        selectedSeats: [],
       };
     });
   },
@@ -42,7 +43,9 @@ const useDateStore = create((set) => ({
         selectedMovieHall: selected.hall || "",
         selectedTimeType: selected.type || "",
         selectedTimePrice: selected.price || 0,
-        total: selected.price * state.quantity,
+        quantity: 1,
+        total: selected.price || 0,
+        selectedSeats: [],
       };
     }),
 

@@ -5,11 +5,16 @@ import clock from "./clock.png";
 import phone from "./phone.png";
 import email from "./email.png";
 import web from "./web.png";
+import cart from "./cart.webp";
 
 /* -------------------------------------BOOK MOVIE PAGE--------------- */
 // const Dropdown = () => {
 //   return <img className="dropdown-icon" src={dropdown} alt="dropdown icon" />;
 // };
+
+const Cart = () => {
+  return <img className="booking_page_left_logo" src={cart} alt="cart icon" />;
+};
 
 /* -------------------------------------LOACATION PAGE--------------- */
 const City = () => {
@@ -49,4 +54,4 @@ const Web = () => {
   return <img className="contact_page_left_logo" src={web} alt="web icon" />;
 };
 
-export { City, Location, Clock, Phone, Email, Web };
+export { Cart, City, Location, Clock, Phone, Email, Web };
