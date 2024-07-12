@@ -12,10 +12,17 @@ const PaymentDialog = ({ open, onClose }) => {
     selectedSeats,
     total,
     quantity,
+    purchaseTickets,
   } = useDateStore();
   const selectedMovie = useSelectMovieStore((state) => state.selectedMovie);
 
   const handleClickOnPay = () => {
+    purchaseTickets(
+      selectedMovie.name,
+      formattedDate,
+      selectedTime,
+      selectedSeats
+    );
     onClose();
   };
 

@@ -13,6 +13,8 @@ const useDateStore = create((set) => ({
   quantity: 0,
   total: 0,
   availableDates: {},
+  occupiedSeats: {},
+  purchasedTickets: [],
 
   setSelectedDate: (date) => {
     const formattedDate = date ? dayjs(date).format("YYYY-MM-DD") : "";
@@ -81,6 +83,23 @@ const useDateStore = create((set) => ({
     set((state) => {
       return {
         total: state.quantity * state.selectedTimePrice,
+      };
+    }),
+
+  purchaseTickets: (movie, date, time, seats) =>
+    set((state) => {
+      const ticket = { movie, date, time, seats };
+      const key = `${movie}_${date}_${time}`;
+      const newOccupiedSeats = state.occupiedSeats[key]
+        ? [...state.occupiedSeats[key], ...seats]
+        : seats;
+
+      return {
+        purchasedTickets: [...state.purchasedTickets, ticket],
+        occupiedSeats: {
+          ...state.occupiedSeats,
+          [key]: newOccupiedSeats,
+        },
       };
     }),
 }));
