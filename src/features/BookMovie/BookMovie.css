@@ -20,14 +20,13 @@
   width: 100%;
   display: flex;
   gap: 2rem;
-  align-items: start;
+  align-items: center;
   justify-content: start;
   text-align: start;
 }
 
 .dropdown {
   display: grid;
-  /* gap: 20px; */
   padding-left: 2rem;
   position: relative;
 }
@@ -100,10 +99,20 @@
 .search input::placeholder {
   color: rgb(236, 226, 226);
 }
+
+.cart {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 70%;
+  padding-right: 1rem;
+}
+
 .book_movie_con_right {
   display: column;
   padding: 1rem 2rem 1rem;
 }
+
 .book_movie_con_right button {
   display: flex;
   align-items: start;
@@ -120,20 +129,24 @@
   gap: 2rem;
   padding-bottom: 1rem;
 }
+
 .movie {
   width: 100%;
 }
+
 .movie_list img {
   width: 100%;
   max-width: 200px;
   height: 250px;
   cursor: pointer;
 }
+
 .movie_name {
   border-radius: 10px;
   background-color: rgba(45, 12, 12, 0.508);
   cursor: pointer;
 }
+
 .movie_name h3 {
   font-size: 15px;
   margin-top: 5px;

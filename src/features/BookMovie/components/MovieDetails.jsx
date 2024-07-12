@@ -7,9 +7,11 @@ import ResponsiveDatePickers from "./ResponsiveDatePickers";
 import Button from "../../../components/Button/Button";
 import SeatPicker from "./SeatPicker";
 import PaymentDialog from "./PaymentDialog";
+import useGenreStore from "../../../stores/genre/genre.store.js";
 
 const MovieDetails = ({ movie }) => {
-  const selectedMovie = useSelectMovieStore((state) => state.selectedMovie);
+  const { selectedMovie, setSelectedMovie } = useSelectMovieStore();
+  const { setSelectedGenre } = useGenreStore();
   const {
     formattedDate,
     selectedTime,
@@ -38,33 +40,44 @@ const MovieDetails = ({ movie }) => {
     setDialogOpen(false);
   };
 
+  const handleBackToAllMovies = () => {
+    setSelectedGenre("");
+    setSelectedMovie(null);
+  };
+
   return (
     <div className="movie_detail">
       <div className="detail_con">
         <div className="detail_con_left">
-          <div className="con_left_detail">
-            <h2>{displayMovie.name}</h2>
-            <MovieRating rating={displayMovie.rating} />
-            <p>
-              2024 | {displayMovie.time} | {displayMovie.genre}
-            </p>
-            <p>{displayMovie.description}</p>
-            <p>Starring: {displayMovie.starring}</p>
-          </div>
-          <div className="con_left_img">
-            <img src={displayMovie.image} alt={displayMovie.name} />
-          </div>
-          <div className="con_left_video">
-            <iframe
-              width="600"
-              height="350"
-              src={displayMovie.video}
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-            ></iframe>
+          <Button
+            buttonText="Back to All Movies"
+            handleButtonOnClick={handleBackToAllMovies}
+          />
+          <div className="movie">
+            <div className="con_left_detail">
+              <h2>{displayMovie.name}</h2>
+              <MovieRating rating={displayMovie.rating} />
+              <p>
+                2024 | {displayMovie.time} | {displayMovie.genre}
+              </p>
+              <p>{displayMovie.description}</p>
+              <p>Starring: {displayMovie.starring}</p>
+            </div>
+            <div>
+              <img src={displayMovie.image} alt={displayMovie.name} />
+            </div>
+            <div>
+              <iframe
+                width="600"
+                height="350"
+                src={displayMovie.video}
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
+            </div>
           </div>
         </div>
         <div className="detail_con_right">
