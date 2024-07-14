@@ -164,6 +164,8 @@
   height: 10px;
   border: 1px solid white;
   display: inline-block;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 .empty {

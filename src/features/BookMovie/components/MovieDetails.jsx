@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import "./styles/MovieDetails.css";
 import useSelectMovieStore from "../../../stores/select_movie/selectMovie.store";
 import useDateStore from "../../../stores/date/date.store.js";
@@ -22,6 +22,7 @@ const MovieDetails = ({ movie }) => {
     quantity,
     setQuantity,
     total,
+    resetState,
   } = useDateStore();
   const [dialogOpen, setDialogOpen] = useState(false);
 
@@ -31,6 +32,11 @@ const MovieDetails = ({ movie }) => {
   useEffect(() => {
     setAvailableDates(availableDates);
   }, [availableDates, setAvailableDates]);
+
+  useEffect(() => {
+    //Resetting state on movie change
+    resetState();
+  }, [displayMovie, resetState]);
 
   const handleProceedToPay = () => {
     setDialogOpen(true);
@@ -132,6 +138,7 @@ const MovieDetails = ({ movie }) => {
               </span>
             </div>
           </div>
+
           <div className="info_seats">
             <p>
               <span className="empty"></span> Empty

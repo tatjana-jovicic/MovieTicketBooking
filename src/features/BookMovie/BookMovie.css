@@ -100,14 +100,6 @@
   color: rgb(236, 226, 226);
 }
 
-.cart {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 70%;
-  padding-right: 1rem;
-}
-
 .book_movie_con_right {
   display: column;
   padding: 1rem 2rem 1rem;
@@ -123,6 +115,7 @@
   text-align: start;
   font-size: 25px;
 }
+
 .movies {
   width: 100%;
   display: flex;
