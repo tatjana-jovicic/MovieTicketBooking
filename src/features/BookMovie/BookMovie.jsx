@@ -1,7 +1,6 @@
 import "./BookMovie.css";
 import { Link } from "react-router-dom";
 import Dropdown from "../../assets/dropdown.png";
-import { Cart } from "../../assets/index";
 import MovieList from "./components/MovieList";
 import useGenreStore from "../../stores/genre/genre.store";
 import Button from "../../components/Button/Button";
@@ -55,9 +54,6 @@ const BookMovie = () => {
           </div>
           <div className="search">
             <input type="text" placeholder="Search..." />
-          </div>
-          <div className="cart">
-            <Cart />
           </div>
         </div>
         <div className="book_movie_con_right">

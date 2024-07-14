@@ -1,3 +1,4 @@
+import { useState } from "react";
 import useDateStore from "../../../stores/date/date.store";
 import useSelectMovieStore from "../../../stores/select_movie/selectMovie.store";
 import "./styles/PaymentDialog.css";
@@ -13,16 +14,51 @@ const PaymentDialog = ({ open, onClose }) => {
     total,
     quantity,
     purchaseTickets,
+    setSelectedSeats,
   } = useDateStore();
   const selectedMovie = useSelectMovieStore((state) => state.selectedMovie);
 
-  const handleClickOnPay = () => {
+  const [name, setName] = useState("");
+  const [surname, setSurname] = useState("");
+  const [email, setEmail] = useState("");
+  const [paymentMethod, setPaymentMethod] = useState("");
+
+  const handleNameChange = (e) => setName(e.target.value);
+  const handleSurnameChange = (e) => setSurname(e.target.value);
+  const handleEmailChange = (e) => setEmail(e.target.value);
+  const handlePaymentMethodChange = (method) => setPaymentMethod(method);
+
+  const handleToPay = () => {
+    if (
+      !name ||
+      !surname ||
+      !email ||
+      !paymentMethod ||
+      !formattedDate ||
+      !selectedTime
+    ) {
+      alert(
+        "Please fill in all reservation details and select a payment method."
+      );
+      return;
+    }
+
+    if (quantity !== selectedSeats.length) {
+      alert(
+        `The quantity of tickets ${quantity} does not match the number of selected seats ${selectedSeats.length}.`
+      );
+      return;
+    }
+
     purchaseTickets(
       selectedMovie.name,
       formattedDate,
       selectedTime,
       selectedSeats
     );
+
+    setSelectedSeats([]);
+
     onClose();
   };
 
@@ -35,15 +71,30 @@ const PaymentDialog = ({ open, onClose }) => {
         <div className="customer_details">
           <div>
             <label>Name:</label>
-            <input type="text" placeholder="Name..." />
+            <input
+              type="text"
+              placeholder="Name..."
+              value={name}
+              onChange={handleNameChange}
+            />
           </div>
           <div>
             <label>Surname:</label>
-            <input type="text" placeholder="Surname..." />
+            <input
+              type="text"
+              placeholder="Surname..."
+              value={surname}
+              onChange={handleSurnameChange}
+            />
           </div>
           <div>
             <label>Email:</label>
-            <input type="email" placeholder="Email..." />
+            <input
+              type="email"
+              placeholder="Email..."
+              value={email}
+              onChange={handleEmailChange}
+            />
           </div>
         </div>
         <div className="movie_details">
@@ -86,7 +137,7 @@ const PaymentDialog = ({ open, onClose }) => {
                   <td>{quantity}</td>
                 </tr>
                 <tr>
-                  <th>Number of Seats:</th>
+                  <th>Selected Seats:</th>
                   <td>{selectedSeats.join(", ")}</td>
                 </tr>
                 <tr>
@@ -100,17 +151,25 @@ const PaymentDialog = ({ open, onClose }) => {
         <div className="payment_method">
           Mark the payment method:
           <label>
-            <input type="radio" />
+            <input
+              type="radio"
+              checked={paymentMethod === "card"}
+              onChange={() => handlePaymentMethodChange("card")}
+            />
             With Card Now
           </label>
           <label>
-            <input type="radio" />
+            <input
+              type="radio"
+              checked={paymentMethod === "cash"}
+              onChange={() => handlePaymentMethodChange("cash")}
+            />
             Cash on delivery
           </label>
         </div>
         <div className="dialog_buttom">
           <Button buttonText="Cancel" handleButtonOnClick={onClose} />
-          <Button buttonText="Pay" handleButtonOnClick={handleClickOnPay} />
+          <Button buttonText="Pay" handleButtonOnClick={handleToPay} />
         </div>
       </div>
     </div>

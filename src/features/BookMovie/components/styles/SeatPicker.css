@@ -19,11 +19,14 @@
 .empty_seat {
   width: 40px;
   height: 40px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   border: 1px solid white;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 14px;
 }
 
 .seat.selected {
@@ -37,8 +40,11 @@
 
 .selected_seats {
   margin-top: 1rem;
+  text-align: center;
 }
 
-.selected_seats span {
-  font-weight: 500;
+.seat.occupied {
+  background-color: rgb(58, 99, 203);
+  color: white;
+  cursor: not-allowed;
 }

@@ -82,10 +82,6 @@ button:focus-visible {
   filter: invert(1);
 } */
 
-.booking_page_left_logo {
-  width: 60px;
-  filter: invert(1);
-}
 /* -------------------------------------CONTACT PAGE--------------- */
 .contact_page_left_logo {
   margin-top: 6px;

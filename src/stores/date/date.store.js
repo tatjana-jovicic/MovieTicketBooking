@@ -9,9 +9,9 @@ const useDateStore = create((set) => ({
   selectedMovieHall: "",
   selectedTimeType: "",
   selectedTimePrice: 0,
-  selectedSeats: [],
   quantity: 0,
   total: 0,
+  selectedSeats: [],
   availableDates: {},
   occupiedSeats: {},
   purchasedTickets: [],
@@ -101,6 +101,20 @@ const useDateStore = create((set) => ({
           [key]: newOccupiedSeats,
         },
       };
+    }),
+
+  resetState: () =>
+    set({
+      selectedDate: null,
+      formattedDate: "",
+      availableTimes: [],
+      selectedTime: "",
+      selectedMovieHall: "",
+      selectedTimeType: "",
+      selectedTimePrice: 0,
+      quantity: 0,
+      total: 0,
+      selectedSeats: [],
     }),
 }));
 
