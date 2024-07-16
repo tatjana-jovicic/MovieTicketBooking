@@ -33,6 +33,7 @@
   justify-content: center;
   text-align: center;
   padding-bottom: 2rem;
+  padding-top: 1rem;
 }
 
 .movie img {
@@ -43,8 +44,14 @@
 }
 
 .con_left_detail {
-  width: 30%;
+  width: 65%;
+  max-width: 400px;
   text-align: start;
+}
+
+.name_and_img {
+  display: flex;
+  gap: 1rem;
 }
 
 .con_left_detail h2 {
@@ -127,7 +134,7 @@
   gap: 10px;
   border: 1px solid rgb(255, 255, 255);
   border-radius: 10px;
-  width: 11%;
+  width: 13%;
   height: 25px;
 }
 
@@ -184,4 +191,70 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media only screen and (max-width: 1245px) {
+  .movie {
+    width: 100%;
+    display: grid;
+  }
+
+  .movie img {
+    max-width: 300px;
+    height: 300px;
+  }
+
+  .video iframe {
+    width: 500px;
+    height: 280px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .details {
+    width: 65%;
+    max-width: 450px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .date_picker {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .name_and_img {
+    display: grid;
+    margin: auto;
+  }
+
+  .con_left_detail {
+    max-width: 500px;
+    margin: auto;
+  }
+
+  .movie img {
+    max-width: 220px;
+  }
+
+  .video iframe {
+    width: 400px;
+    height: 225px;
+  }
+
+  .quantity {
+    gap: 5px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .video iframe {
+    width: 350px;
+    height: 200px;
+  }
+
+  .details {
+    width: 70%;
+  }
 }

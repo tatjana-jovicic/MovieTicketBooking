@@ -60,7 +60,7 @@ export const movies = [
     genre: "Action",
     starring: "Jessica Chastain, John Malkovich",
     group: "new",
-    // video: "https://www.youtube.com/embed/oRKQAk2Kwbg?si=BbM_KFXrLadpTBrQ",
+    video: "https://www.youtube.com/embed/oRKQAk2Kwbg?si=BbM_KFXrLadpTBrQ",
     availableDates: {
       "2024-07-22": [
         { time: "17:00", hall: "A1", type: "2D", price: 10 },

@@ -10,18 +10,20 @@ const MovieDetailsLeft = ({ displayMovie, handleBackToAllMovies }) => {
         handleButtonOnClick={handleBackToAllMovies}
       />
       <div className="movie">
-        <div className="con_left_detail">
-          <h2>{displayMovie.name}</h2>
-          <MovieRating rating={displayMovie.rating} />
-          <p>
-            2024 | {displayMovie.time} | {displayMovie.genre}
-          </p>
-          <p>{displayMovie.description}</p>
+        <div className="name_and_img">
+          <div className="con_left_detail">
+            <h2>{displayMovie.name}</h2>
+            <MovieRating rating={displayMovie.rating} />
+            <p>
+              2024 | {displayMovie.time} | {displayMovie.genre}
+            </p>
+            <p>{displayMovie.description}</p>
+          </div>
+          <div>
+            <img src={displayMovie.image} alt={displayMovie.name} />
+          </div>
         </div>
-        <div>
-          <img src={displayMovie.image} alt={displayMovie.name} />
-        </div>
-        <div>
+        <div className="video">
           <iframe
             width="600"
             height="350"
