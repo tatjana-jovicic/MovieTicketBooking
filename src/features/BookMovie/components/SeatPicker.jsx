@@ -1,6 +1,8 @@
-import "./styles/SeatPicker.css";
 import useDateStore from "../../../stores/date/date.store.js";
 import useSelectMovieStore from "../../../stores/select_movie/selectMovie.store.js";
+import "./styles/SeatPicker.css";
+import SeatItem from "./SeatItem";
+import { seatMap } from "../../../data/seatmap.js";
 
 const SeatPicker = () => {
   const {
@@ -11,73 +13,12 @@ const SeatPicker = () => {
     formattedDate,
     selectedTime,
   } = useDateStore();
+
   const { selectedMovie } = useSelectMovieStore();
+
   const movieKey = selectedMovie ? selectedMovie.name : "";
   const occupiedKey = `${movieKey}_${formattedDate}_${selectedTime}`;
   const occupiedSeatsForSelectedDateTime = occupiedSeats[occupiedKey] || [];
-
-  const seatMap = [
-    [
-      { id: "A1", label: "A1" },
-      { id: "A2", label: "A2" },
-      null,
-      { id: "A3", label: "A3" },
-      { id: "A4", label: "A4" },
-      { id: "A5", label: "A5" },
-      { id: "A6", label: "A6" },
-      null,
-      { id: "A7", label: "A7" },
-      { id: "A8", label: "A8" },
-    ],
-    [
-      { id: "B1", label: "B1" },
-      { id: "B2", label: "B2" },
-      null,
-      { id: "B3", label: "B3" },
-      { id: "B4", label: "B4" },
-      { id: "B5", label: "B5" },
-      { id: "B6", label: "B6" },
-      null,
-      { id: "B7", label: "B7" },
-      { id: "B8", label: "B8" },
-    ],
-    [
-      { id: "C1", label: "C1" },
-      { id: "C2", label: "C2" },
-      null,
-      { id: "C3", label: "C3" },
-      { id: "C4", label: "C4" },
-      { id: "C5", label: "C5" },
-      { id: "C6", label: "C6" },
-      null,
-      { id: "C7", label: "C7" },
-      { id: "C8", label: "C8" },
-    ],
-    [
-      { id: "D1", label: "D1" },
-      { id: "D2", label: "D2" },
-      null,
-      { id: "D3", label: "D3" },
-      { id: "D4", label: "D4" },
-      { id: "D5", label: "D5" },
-      { id: "D6", label: "D6" },
-      null,
-      { id: "D7", label: "D7" },
-      { id: "D8", label: "D8" },
-    ],
-    [
-      { id: "E1", label: "E1" },
-      { id: "E2", label: "E2" },
-      null,
-      { id: "E3", label: "E3" },
-      { id: "E4", label: "E4" },
-      { id: "E5", label: "E5" },
-      { id: "E6", label: "E6" },
-      null,
-      { id: "E7", label: "E7" },
-      { id: "E8", label: "E8" },
-    ],
-  ];
 
   const handleSeatClick = (seatId) => {
     if (occupiedSeatsForSelectedDateTime.includes(seatId)) {
@@ -101,19 +42,15 @@ const SeatPicker = () => {
           <div key={`row-${rowIndex}`} className="seat_row">
             {row.map((seat, index) =>
               seat ? (
-                <div
+                <SeatItem
                   key={seat.id}
-                  className={`seat ${
-                    selectedSeats.includes(seat.id) ? "selected" : ""
-                  } ${
-                    occupiedSeatsForSelectedDateTime.includes(seat.id)
-                      ? "occupied"
-                      : ""
-                  }`}
-                  onClick={() => handleSeatClick(seat.id)}
-                >
-                  {seat.label}
-                </div>
+                  seat={seat}
+                  isSelected={selectedSeats.includes(seat.id)}
+                  isOccupied={occupiedSeatsForSelectedDateTime.includes(
+                    seat.id
+                  )}
+                  onClick={handleSeatClick}
+                />
               ) : (
                 <div key={`empty-${index}`} className="empty_seat"></div>
               )
