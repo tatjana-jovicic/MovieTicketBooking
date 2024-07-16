@@ -39,7 +39,7 @@ const ResponsiveDatePickers = () => {
       <div
         style={{
           display: "flex",
-          gap: "2rem",
+          gap: "1rem",
           justifyContent: "center",
         }}
       >
@@ -48,6 +48,7 @@ const ResponsiveDatePickers = () => {
           onChange={handleDateChange}
           shouldDisableDate={shouldDisableDate}
           sx={{
+            width: "45%",
             backgroundColor: "rgba(226, 208, 208, 0.566)",
             borderRadius: "10px",
           }}
@@ -59,7 +60,7 @@ const ResponsiveDatePickers = () => {
           <FormControl
             fullWidth
             sx={{
-              maxWidth: "230px",
+              width: "45%",
               backgroundColor: "rgba(226, 208, 208, 0.566)",
               borderRadius: "10px",
             }}

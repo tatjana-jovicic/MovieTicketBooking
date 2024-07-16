@@ -116,6 +116,7 @@
   font-size: 25px;
 }
 
+/* MovieDetails components styles */
 .movies {
   width: 100%;
   display: flex;
@@ -144,4 +145,83 @@
   font-size: 15px;
   margin-top: 5px;
   padding: 5px;
+}
+
+@media only screen and (max-width: 1350px) {
+  .movies {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .movies {
+    max-width: 1000px;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media only screen and (max-width: 1066px) {
+  .movies {
+    max-width: 800px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media only screen and (max-width: 862px) {
+  .movies {
+    max-width: 600px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .movies {
+    max-width: 400px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .search input {
+    max-width: 150px;
+  }
+}
+
+@media only screen and (max-width: 465px) {
+  .movies {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 200px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .book_movie_con_right h1 {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .book_movie_con_left {
+    display: grid;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .dropdown {
+    padding-left: 0;
+  }
+
+  .dropdown-content {
+    left: 0px;
+  }
+
+  .book_movie_con_right button {
+    align-items: center;
+    margin: auto;
+  }
 }

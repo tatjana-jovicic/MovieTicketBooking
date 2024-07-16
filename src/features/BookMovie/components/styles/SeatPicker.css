@@ -48,3 +48,34 @@
   color: white;
   cursor: not-allowed;
 }
+
+@media only screen and (max-width: 720px) {
+  .seat,
+  .empty_seat {
+    width: 35px;
+    height: 35px;
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .seat,
+  .empty_seat {
+    width: 30px;
+    height: 30px;
+  }
+  .seat_row {
+    gap: 0.3rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .seat,
+  .empty_seat {
+    width: 25px;
+    height: 25px;
+  }
+  .seat_row {
+    gap: 0.3rem;
+  }
+}
