@@ -193,10 +193,7 @@ const PaymentDialog = ({ open, onClose }) => {
   const {
     formattedDate,
     selectedTime,
-    selectedMovieHall,
-    selectedTimeType,
     selectedSeats,
-    total,
     quantity,
     purchaseTickets,
     setSelectedSeats,
@@ -241,9 +238,7 @@ const PaymentDialog = ({ open, onClose }) => {
       selectedTime,
       selectedSeats
     );
-
     setSelectedSeats([]);
-
     onClose();
   };
 
@@ -265,11 +260,8 @@ const PaymentDialog = ({ open, onClose }) => {
           selectedMovie={selectedMovie}
           formattedDate={formattedDate}
           selectedTime={selectedTime}
-          selectedTimeType={selectedTimeType}
-          selectedMovieHall={selectedMovieHall}
           quantity={quantity}
           selectedSeats={selectedSeats}
-          total={total}
         />
         <PaymentDPaymentMethod
           paymentMethod={paymentMethod}

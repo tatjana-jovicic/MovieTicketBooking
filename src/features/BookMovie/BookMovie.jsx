@@ -230,7 +230,6 @@ const BookMovie = () => {
           handleGenreClick={handleGenreClick}
           searchTerm={searchTerm}
           handleSearchChange={handleSearchChange}
-          selectedMovie={selectedMovie}
         />
         <BookMovieRight
           selectedMovie={selectedMovie}
