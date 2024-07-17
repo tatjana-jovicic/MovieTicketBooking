@@ -1,4 +1,4 @@
-import useDateStore from "../../../stores/date/date.store";
+import useBookStore from "../../../stores/book/book.store";
 import "./styles/PaymentDialog.css";
 
 const PaymentDMovieDetails = ({
@@ -8,7 +8,7 @@ const PaymentDMovieDetails = ({
   quantity,
   selectedSeats,
 }) => {
-  const { selectedMovieHall, selectedTimeType, total } = useDateStore();
+  const { selectedMovieHall, selectedTimeType, total } = useBookStore();
 
   return (
     <div className="movie_details">

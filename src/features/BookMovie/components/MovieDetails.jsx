@@ -1,15 +1,12 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import "./styles/MovieDetails.css";
-import useSelectMovieStore from "../../../stores/select_movie/selectMovie.store";
-import useDateStore from "../../../stores/date/date.store.js";
-import useGenreStore from "../../../stores/genre/genre.store.js";
+import useBookStore from "../../../stores/book/book.store.js";
 import MovieDetailsLeft from "./MovieDetailsLeft";
 import MovieDetailsRight from "./MovieDetailsRight";
 
 const MovieDetails = ({ movie }) => {
-  const { setSelectedMovie } = useSelectMovieStore();
-  const { setSelectedGenre } = useGenreStore();
-  const { setAvailableDates } = useDateStore();
+  const { setAvailableDates, setSelectedGenre, setSelectedMovie } =
+    useBookStore();
 
   const displayMovie = movie;
 

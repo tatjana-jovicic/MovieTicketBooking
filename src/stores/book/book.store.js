@@ -1,7 +1,7 @@
 import { create } from "zustand";
 import dayjs from "dayjs";
 
-const useDateStore = create((set) => ({
+const useBookStore = create((set) => ({
   selectedDate: null,
   formattedDate: "",
   availableTimes: [],
@@ -15,6 +15,12 @@ const useDateStore = create((set) => ({
   availableDates: {},
   occupiedSeats: {},
   purchasedTickets: [],
+  selectedMovie: null,
+  selectedGenre: "",
+
+  setSelectedMovie: (movie) => set({ selectedMovie: movie }),
+
+  setSelectedGenre: (genre) => set({ selectedGenre: genre }),
 
   setSelectedDate: (date) => {
     const formattedDate = date ? dayjs(date).format("YYYY-MM-DD") : "";
@@ -123,4 +129,4 @@ const useDateStore = create((set) => ({
     }),
 }));
 
-export default useDateStore;
+export default useBookStore;

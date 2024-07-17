@@ -1,6 +1,5 @@
 import { useState } from "react";
-import useDateStore from "../../../stores/date/date.store";
-import useSelectMovieStore from "../../../stores/select_movie/selectMovie.store";
+import useBookStore from "../../../stores/book/book.store";
 import "./styles/PaymentDialog.css";
 import PaymentDDialogButtons from "./PaymentDDialogButtons";
 import PaymentDPaymentMethod from "./PaymentDPaymentMethod";
@@ -15,8 +14,8 @@ const PaymentDialog = ({ open, onClose }) => {
     quantity,
     purchaseTickets,
     setSelectedSeats,
-  } = useDateStore();
-  const selectedMovie = useSelectMovieStore((state) => state.selectedMovie);
+    selectedMovie,
+  } = useBookStore();
 
   const [name, setName] = useState("");
   const [surname, setSurname] = useState("");

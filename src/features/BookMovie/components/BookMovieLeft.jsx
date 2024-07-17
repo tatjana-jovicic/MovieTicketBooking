@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
 import Dropdown from "../../../assets/dropdown.png";
 import "../BookMovie.css";
-import useSelectMovieStore from "../../../stores/select_movie/selectMovie.store";
+import useBookStore from "../../../stores/book/book.store";
 
 const BookMovieLeft = ({
   handleGenreClick,
   searchTerm,
   handleSearchChange,
 }) => {
-  const selectedMovie = useSelectMovieStore((state) => state.selectedMovie);
+  const { selectedMovie } = useBookStore();
 
   return (
     <div className="book_movie_con_left">
