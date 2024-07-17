@@ -6,17 +6,17 @@ const LocationInfo = () => {
     {
       logo: <City />,
       title: "City",
-      description: "London",
+      description: "Chicago",
     },
     {
       logo: <Location />,
       title: "Address",
-      description: "307 Regent St., London W1B 2HW, United Kingdom",
+      description: "80 Chicago Rd5, Chicago, USA",
     },
     {
       logo: <Clock />,
       title: "Work time",
-      description: "monday - sunday, 03 PM - 03 AM",
+      description: "monday - sunday, 2:00 PM - 3:00 AM",
     },
   ];
 
