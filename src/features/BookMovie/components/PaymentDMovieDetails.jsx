@@ -12,7 +12,7 @@ const PaymentDMovieDetails = ({
 
   return (
     <div className="movie_details">
-      <div>
+      <div className="movie_img">
         <img src={selectedMovie.image} alt={selectedMovie.name} />
       </div>
       <div className="movie_info">

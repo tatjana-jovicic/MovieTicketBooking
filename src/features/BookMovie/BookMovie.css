@@ -147,6 +147,14 @@
   padding: 5px;
 }
 
+@media only screen and (max-width: 1550px) {
+  .movies {
+    display: grid;
+    max-width: 1400px;
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+
 @media only screen and (max-width: 1350px) {
   .movies {
     display: grid;
