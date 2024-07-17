@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Dropdown from "../../../assets/dropdown.png";
+import { Dropdown } from "../../../assets/index";
 import "../BookMovie.css";
 import useBookStore from "../../../stores/book/book.store";
 
@@ -15,7 +15,7 @@ const BookMovieLeft = ({
       <div className="dropdown">
         <button>
           Choose genre
-          <img src={Dropdown} alt="dropdown icon" />
+          <Dropdown />
         </button>
         <div className="dropdown-content">
           <Link to="#" onClick={() => handleGenreClick("Romance")}>

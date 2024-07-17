@@ -52,11 +52,13 @@
   padding: 10px;
   color: white;
 }
+
 .navigation button {
   padding: 5px;
   margin: 0;
   border: none;
 }
+
 .menu-icon {
   display: none;
   font-size: 25px;

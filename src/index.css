@@ -74,14 +74,39 @@ button:focus-visible {
   }
 }
 
+/* -------------------------------------PAGE LOGO--------------- */
+.page_logo_img {
+  width: 50%;
+  max-width: 80px;
+}
 /* -------------------------------------BOOK MOVIE PAGE--------------- */
-
-/* .dropdown-icon {
-  width: 10%;
+.dropdown_icon {
+  width: 15px;
   margin-left: 10px;
   filter: invert(1);
-} */
+}
 
+/* -------------------------------------HOME PAGE--------------- */
+.home_con_right_img {
+  width: 30%;
+  max-width: 350px;
+  max-height: 300px;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.493);
+  box-shadow: 0 0 15px 1px rgba(255, 255, 255, 0.7);
+}
+
+@media only screen and (max-width: 1500px) {
+  .home_con_right_img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .home_con_right_img {
+    width: 34%;
+  }
+}
 /* -------------------------------------CONTACT PAGE--------------- */
 .contact_page_left_logo {
   margin-top: 6px;
@@ -89,12 +114,14 @@ button:focus-visible {
   height: 35px;
   filter: invert(1);
 }
+
 @media only screen and (max-width: 850px) {
   .contact_page_left_logo {
     width: 30px;
     height: 30px;
   }
 }
+
 @media only screen and (max-width: 495px) {
   .contact_page_left_logo {
     width: 25px;
@@ -108,12 +135,14 @@ button:focus-visible {
   height: 35px;
   filter: invert(1);
 }
+
 @media only screen and (max-width: 850px) {
   .location_page_left_logo {
     width: 30px;
     height: 30px;
   }
 }
+
 @media only screen and (max-width: 495px) {
   .location_page_left_logo {
     width: 25px;
