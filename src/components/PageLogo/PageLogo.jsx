@@ -1,10 +1,17 @@
 import "./PageLogo.css";
-import PageLogoImg from "../../assets/page-logo.png";
+import { Page_Logo } from "../../assets/index";
+import { useNavigate } from "react-router-dom";
 
 const PageLogo = () => {
+  const router = useNavigate();
+
+  const handleClickLogo = () => {
+    router("/");
+  };
+
   return (
-    <div className="page_logo">
-      <img src={PageLogoImg} alt="page logo" />
+    <div className="page_logo" onClick={() => handleClickLogo()}>
+      <Page_Logo />
     </div>
   );
 };

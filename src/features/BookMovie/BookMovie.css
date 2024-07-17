@@ -51,12 +51,6 @@
   font-weight: bold;
 }
 
-.dropdown img {
-  width: 15px;
-  margin-left: 10px;
-  filter: invert(1);
-}
-
 .dropdown-content {
   display: none;
   position: absolute;
