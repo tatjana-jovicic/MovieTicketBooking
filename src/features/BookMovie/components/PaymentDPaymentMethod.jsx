@@ -13,7 +13,7 @@ const PaymentDPaymentMethod = ({
           checked={paymentMethod === "card"}
           onChange={() => handlePaymentMethodChange("card")}
         />
-        With Card Now
+        With Card
       </label>
       <label>
         <input
@@ -21,7 +21,7 @@ const PaymentDPaymentMethod = ({
           checked={paymentMethod === "cash"}
           onChange={() => handlePaymentMethodChange("cash")}
         />
-        Cash on delivery
+        Cash on Delivery
       </label>
     </div>
   );
