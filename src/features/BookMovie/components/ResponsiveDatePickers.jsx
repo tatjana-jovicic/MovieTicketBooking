@@ -8,7 +8,7 @@ import {
   InputLabel,
   TextField,
 } from "@mui/material";
-import useDateStore from "../../../stores/date/date.store.js";
+import useBookStore from "../../../stores/book/book.store.js";
 
 const ResponsiveDatePickers = () => {
   const {
@@ -17,7 +17,7 @@ const ResponsiveDatePickers = () => {
     selectedTime,
     setSelectedDate,
     setSelectedTime,
-  } = useDateStore();
+  } = useBookStore();
 
   const handleDateChange = (date) => {
     setSelectedDate(date);
@@ -29,7 +29,7 @@ const ResponsiveDatePickers = () => {
 
   const shouldDisableDate = (date) => {
     const formattedDate = date.format("YYYY-MM-DD");
-    return !useDateStore
+    return !useBookStore
       .getState()
       .availableDates.hasOwnProperty(formattedDate);
   };

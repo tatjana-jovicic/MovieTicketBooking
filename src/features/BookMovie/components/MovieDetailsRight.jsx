@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "./styles/MovieDetails.css";
-import useDateStore from "../../../stores/date/date.store.js";
+import useBookStore from "../../../stores/book/book.store.js";
 import ResponsiveDatePickers from "./ResponsiveDatePickers";
 import Button from "../../../components/Button/Button.jsx";
 import SeatPicker from "./SeatPicker";
@@ -17,8 +17,8 @@ const MovieDetailsRight = () => {
     setQuantity,
     total,
     resetState,
-  } = useDateStore();
-  const [dialogOpen, setDialogOpen] = React.useState(false);
+  } = useBookStore();
+  const [dialogOpen, setDialogOpen] = useState(false);
 
   useEffect(() => {
     return () => {

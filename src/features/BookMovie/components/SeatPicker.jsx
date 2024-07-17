@@ -1,5 +1,4 @@
-import useDateStore from "../../../stores/date/date.store.js";
-import useSelectMovieStore from "../../../stores/select_movie/selectMovie.store.js";
+import useBookStore from "../../../stores/book/book.store.js";
 import "./styles/SeatPicker.css";
 import SeatItem from "./SeatItem";
 import { seatMap } from "../../../data/seatmap.js";
@@ -12,9 +11,8 @@ const SeatPicker = () => {
     occupiedSeats,
     formattedDate,
     selectedTime,
-  } = useDateStore();
-
-  const { selectedMovie } = useSelectMovieStore();
+    selectedMovie,
+  } = useBookStore();
 
   const movieKey = selectedMovie ? selectedMovie.name : "";
   const occupiedKey = `${movieKey}_${formattedDate}_${selectedTime}`;

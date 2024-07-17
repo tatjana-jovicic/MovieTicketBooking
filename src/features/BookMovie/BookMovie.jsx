@@ -1,18 +1,13 @@
 import { useState } from "react";
 import BookMovieRight from "./components/BookMovieRight";
-import useGenreStore from "../../stores/genre/genre.store";
-import useSelectMovieStore from "../../stores/select_movie/selectMovie.store";
+import useBookStore from "../../stores/book/book.store";
 import BookMovieLeft from "./components/BookMovieLeft";
 import { movies } from "../../data/moviesdata";
 import "./BookMovie.css";
 
 const BookMovie = () => {
-  const selectedMovie = useSelectMovieStore((state) => state.selectedMovie);
-  const setSelectedMovie = useSelectMovieStore(
-    (state) => state.setSelectedMovie
-  );
-  const selectedGenre = useGenreStore((state) => state.selectedGenre);
-  const setSelectedGenre = useGenreStore((state) => state.setSelectedGenre);
+  const { selectedMovie, setSelectedMovie, selectedGenre, setSelectedGenre } =
+    useBookStore();
   const [searchTerm, setSearchTerm] = useState("");
   const [searchResults, setSearchResults] = useState([]);
 

@@ -1,12 +1,10 @@
 import "../BookMovie.css";
 import { movies as allMovies } from "../../../data/moviesdata";
-import useSelectMovieStore from "../../../stores/select_movie/selectMovie.store";
 import MovieRating from "./MovieRating";
+import useBookStore from "../../../stores/book/book.store";
 
 const MovieList = ({ filter, filterValue, onMovieClick, movies }) => {
-  const setSelectedMovie = useSelectMovieStore(
-    (state) => state.setSelectedMovie
-  );
+  const { setSelectedMovie } = useBookStore();
 
   const filteredMovies =
     movies || allMovies.filter((movie) => movie[filter] === filterValue);

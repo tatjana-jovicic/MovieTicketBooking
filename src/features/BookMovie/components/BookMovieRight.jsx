@@ -1,8 +1,8 @@
 import Button from "../../../components/Button/Button";
 import MovieList from "./MovieList";
 import MovieDetails from "./MovieDetails";
-import useGenreStore from "../../../stores/genre/genre.store";
 import "../BookMovie.css";
+import useBookStore from "../../../stores/book/book.store";
 
 const BookMovieRight = ({
   selectedMovie,
@@ -11,7 +11,7 @@ const BookMovieRight = ({
   searchResults,
   handleBackToAllMovies,
 }) => {
-  const selectedGenre = useGenreStore((state) => state.selectedGenre);
+  const { selectedGenre } = useBookStore();
 
   return (
     <div className="book_movie_con_right">
