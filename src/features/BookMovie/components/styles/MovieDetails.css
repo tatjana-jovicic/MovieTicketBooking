@@ -13,6 +13,8 @@
   align-items: center;
   text-align: center;
   padding-bottom: 1rem;
+  padding-top: 10rem;
+  /*  padding-top: 10rem; ako nema ovog onda se samo dio moviedetailsleft prikaze */
 }
 
 .detail_con_left {
@@ -193,6 +195,15 @@
   align-items: center;
 }
 
+@media only screen and (max-width: 1350px) {
+  .movie {
+    width: 97%;
+  }
+  .con_left_detail {
+    padding-left: 2rem;
+  }
+}
+
 @media only screen and (max-width: 1245px) {
   .movie {
     width: 100%;
@@ -205,25 +216,12 @@
   }
 
   .video iframe {
-    width: 500px;
-    height: 280px;
+    width: 600px;
+    height: 320px;
   }
 }
 
-@media only screen and (max-width: 700px) {
-  .details {
-    width: 65%;
-    max-width: 450px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .date_picker {
-    width: 90%;
-  }
-}
-
-@media only screen and (max-width: 570px) {
+@media only screen and (max-width: 730px) {
   .name_and_img {
     display: grid;
     margin: auto;
@@ -239,10 +237,15 @@
   }
 
   .video iframe {
-    width: 400px;
-    height: 225px;
+    width: 450px;
+    height: 250px;
   }
+}
 
+@media only screen and (max-width: 600px) {
+  .date_picker {
+    width: 90%;
+  }
   .quantity {
     gap: 5px;
   }

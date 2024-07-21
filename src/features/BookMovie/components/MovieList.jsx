@@ -1,27 +1,33 @@
 import "../BookMovie.css";
-import { movies as allMovies } from "../../../data/moviesdata";
+import { useNavigate } from "react-router-dom";
+import { movies as allMovies } from "../../../data/moviesdata"; //filmovie iz lokalnog fajla dodjeljuje promenljivoj 'allMovies'
 import MovieRating from "./MovieRating";
 import useBookStore from "../../../stores/book/book.store";
 
-const MovieList = ({ filter, filterValue, onMovieClick, movies }) => {
-  const { setSelectedMovie } = useBookStore();
+const MovieList = ({ movies }) => {
+  const { setSelectedMovie, selectedGenre } = useBookStore();
+  const navigate = useNavigate();
 
-  const filteredMovies =
-    movies || allMovies.filter((movie) => movie[filter] === filterValue);
+  //filtrira filmove prema zanru ako je izabran zanr, ili prikazuje sve filmove ako nije
+  const displayedMovies =
+    movies ||
+    allMovies.filter(
+      (movie) => !selectedGenre || movie.genre.includes(selectedGenre)
+    );
 
+  //funkcija koja se poziva kada se klikne na film
   const handleMovieClick = (movie) => {
-    setSelectedMovie(movie);
-    onMovieClick(movie);
+    setSelectedMovie(movie); //setuje izabrani film u store
+    navigate(`/book_movie/details/${movie.id}`); //navigira na stranicu sa detaljima izabranog filma
   };
 
   return (
     <div className="movies">
-      {filteredMovies.map((movie) => (
+      {displayedMovies.map((movie) => (
         <div
           className="movie_list"
           key={movie.id}
           onClick={() => handleMovieClick(movie)}
-          title="Click for book movie"
         >
           <img src={movie.image} alt={movie.name} />
           <MovieRating rating={movie.rating} />

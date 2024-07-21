@@ -5,21 +5,14 @@ import ResponsiveDatePickers from "./ResponsiveDatePickers";
 import Button from "../../../components/Button/Button.jsx";
 import SeatPicker from "./SeatPicker";
 import PaymentDialog from "./PaymentDialog";
+import MovieDetailsRightTable from "./MovieDetailsRightTable.jsx";
+import MovieDetailsRightSeatQuantity from "./MovieDetailsRightSeatQuantity.jsx";
 
 const MovieDetailsRight = () => {
-  const {
-    formattedDate,
-    selectedTime,
-    selectedMovieHall,
-    selectedTimeType,
-    selectedTimePrice,
-    quantity,
-    setQuantity,
-    total,
-    resetState,
-  } = useBookStore();
+  const { resetState } = useBookStore();
   const [dialogOpen, setDialogOpen] = useState(false);
 
+  //funkcija koja se poziva kada se komponenta demontira, cime se vraca stanje na pocetne vrijednosti
   useEffect(() => {
     return () => {
       resetState();
@@ -39,51 +32,8 @@ const MovieDetailsRight = () => {
       <div className="date_picker">
         <ResponsiveDatePickers />
       </div>
-      <div className="details">
-        <table>
-          <tbody>
-            <tr>
-              <th>Selected Date</th>
-              <td>{formattedDate}</td>
-            </tr>
-            <tr>
-              <th>Selected Time</th>
-              <td>{selectedTime}</td>
-            </tr>
-            <tr>
-              <th>Movie Hall</th>
-              <td>{selectedMovieHall}</td>
-            </tr>
-            <tr>
-              <th>Price per ticket</th>
-              <td>${selectedTimePrice.toFixed(2)}</td>
-            </tr>
-            <tr>
-              <th>Type</th>
-              <td>{selectedTimeType}</td>
-            </tr>
-            <tr>
-              <th>Total</th>
-              <td>${total.toFixed(2)}</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div className="num_seats">
-        Number of Seats:
-        <div className="quantity">
-          <span
-            className="decrement"
-            onClick={() => setQuantity(Math.max(0, quantity - 1))}
-          >
-            -
-          </span>
-          <span>{quantity}</span>
-          <span className="increment" onClick={() => setQuantity(quantity + 1)}>
-            +
-          </span>
-        </div>
-      </div>
+      <MovieDetailsRightTable />
+      <MovieDetailsRightSeatQuantity />
       <div className="info_seats">
         <p>
           <span className="empty"></span> Empty

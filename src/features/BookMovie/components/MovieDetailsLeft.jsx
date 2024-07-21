@@ -1,33 +1,31 @@
 import "./styles/MovieDetails.css";
 import MovieRating from "./MovieRating";
-import Button from "../../../components/Button/Button.jsx";
+import useBookStore from "../../../stores/book/book.store";
 
-const MovieDetailsLeft = ({ displayMovie, handleBackToAllMovies }) => {
+const MovieDetailsLeft = () => {
+  const { selectedMovie } = useBookStore();
+
   return (
     <div className="detail_con_left">
-      <Button
-        buttonText="Back to All Movies"
-        handleButtonOnClick={handleBackToAllMovies}
-      />
       <div className="movie">
         <div className="name_and_img">
           <div className="con_left_detail">
-            <h2>{displayMovie.name}</h2>
-            <MovieRating rating={displayMovie.rating} />
+            <h2>{selectedMovie.name}</h2>
+            <MovieRating rating={selectedMovie.rating} />
             <p>
-              2024 | {displayMovie.time} | {displayMovie.genre}
+              2024 | {selectedMovie.time} | {selectedMovie.genre}
             </p>
-            <p>{displayMovie.description}</p>
+            <p>{selectedMovie.description}</p>
           </div>
           <div>
-            <img src={displayMovie.image} alt={displayMovie.name} />
+            <img src={selectedMovie.image} alt={selectedMovie.name} />
           </div>
         </div>
         <div className="video">
           <iframe
             width="600"
             height="350"
-            src={displayMovie.video}
+            src={selectedMovie.video}
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -38,4 +36,5 @@ const MovieDetailsLeft = ({ displayMovie, handleBackToAllMovies }) => {
     </div>
   );
 };
+
 export default MovieDetailsLeft;

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import useBookStore from "../../../stores/book/book.store";
 import "./styles/PaymentDialog.css";
 import PaymentDDialogButtons from "./PaymentDDialogButtons";
@@ -27,7 +27,10 @@ const PaymentDialog = ({ open, onClose }) => {
   const handleEmailChange = (e) => setEmail(e.target.value);
   const handlePaymentMethodChange = (method) => setPaymentMethod(method);
 
-  const handleToPay = () => {
+  //funkcija koja se poziva kada korisnik potvrdi placanje
+  //provjerava da li su svi podaci unijeti i da li je kolicina karata u skladu sa brojem selektovanih sjedista
+  //ako je sve u redu, poziva purchaseTickets i resetuje selektovana sjedista
+  const handleToPay = useCallback(() => {
     if (
       !name ||
       !surname ||
@@ -36,15 +39,15 @@ const PaymentDialog = ({ open, onClose }) => {
       !formattedDate ||
       !selectedTime
     ) {
-      alert(
+      console.error(
         "Please fill in all reservation details and select a payment method."
       );
       return;
     }
 
     if (quantity !== selectedSeats.length) {
-      alert(
-        `The quantity of tickets ${quantity} does not match the number of selected seats ${selectedSeats.length}.`
+      console.error(
+        `The quantity of tickets (${quantity}) does not match the number of selected seats (${selectedSeats.length}).`
       );
       return;
     }
@@ -57,8 +60,22 @@ const PaymentDialog = ({ open, onClose }) => {
     );
     setSelectedSeats([]);
     onClose();
-  };
+  }, [
+    name,
+    surname,
+    email,
+    paymentMethod,
+    formattedDate,
+    selectedTime,
+    quantity,
+    selectedSeats,
+    purchaseTickets,
+    selectedMovie,
+    setSelectedSeats,
+    onClose,
+  ]);
 
+  //ako dijalog nije otvoren ne prikazuje se nista
   if (!open) return null;
 
   return (
@@ -73,13 +90,7 @@ const PaymentDialog = ({ open, onClose }) => {
           handleSurnameChange={handleSurnameChange}
           handleEmailChange={handleEmailChange}
         />
-        <PaymentDMovieDetails
-          selectedMovie={selectedMovie}
-          formattedDate={formattedDate}
-          selectedTime={selectedTime}
-          quantity={quantity}
-          selectedSeats={selectedSeats}
-        />
+        <PaymentDMovieDetails />
         <PaymentDPaymentMethod
           paymentMethod={paymentMethod}
           handlePaymentMethodChange={handlePaymentMethodChange}
@@ -114,9 +125,9 @@ export default PaymentDialog;
 //     selectedMovie,
 //   } = useBookStore();
 
-//   const setNotification = useNotificationStore(
-//     (state) => state.setNotification
-//   );
+// const setNotification = useNotificationStore(
+//   (state) => state.setNotification
+// );
 
 //   const [name, setName] = useState("");
 //   const [surname, setSurname] = useState("");
