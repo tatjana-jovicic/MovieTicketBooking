@@ -1,14 +1,17 @@
 import useBookStore from "../../../stores/book/book.store";
 import "./styles/PaymentDialog.css";
 
-const PaymentDMovieDetails = ({
-  selectedMovie,
-  formattedDate,
-  selectedTime,
-  quantity,
-  selectedSeats,
-}) => {
-  const { selectedMovieHall, selectedTimeType, total } = useBookStore();
+const PaymentDMovieDetails = () => {
+  const {
+    selectedMovie,
+    formattedDate,
+    selectedTime,
+    quantity,
+    selectedSeats,
+    selectedMovieHall,
+    selectedTimeType,
+    total,
+  } = useBookStore();
 
   return (
     <div className="movie_details">

@@ -17,21 +17,19 @@ const ResponsiveDatePickers = () => {
     selectedTime,
     setSelectedDate,
     setSelectedTime,
+    availableDates,
   } = useBookStore();
 
-  const handleDateChange = (date) => {
-    setSelectedDate(date);
-  };
-
+  //funkcija koja se poziva kada korisnik izabere novo vrijeme
   const handleTimeChange = (event) => {
     setSelectedTime(event.target.value);
   };
 
+  //funkcija koja odredjuje da li bi odredjeni datum trebao biti onemogucen u DatePicker komponenti
+  //ako datum nije u availableDates, vraca true da bi ga onemogucio
   const shouldDisableDate = (date) => {
     const formattedDate = date.format("YYYY-MM-DD");
-    return !useBookStore
-      .getState()
-      .availableDates.hasOwnProperty(formattedDate);
+    return !availableDates.hasOwnProperty(formattedDate);
   };
 
   return (
@@ -45,7 +43,7 @@ const ResponsiveDatePickers = () => {
       >
         <DatePicker
           value={selectedDate}
-          onChange={handleDateChange}
+          onChange={setSelectedDate}
           shouldDisableDate={shouldDisableDate}
           sx={{
             width: "45%",
