@@ -15,6 +15,8 @@ import phone from "./contact/phone.png";
 import email from "./contact/email.png";
 import web from "./contact/web.png";
 import pageLogo from "./page-logo.png";
+import increment from "./bookMovie/increment.png";
+import decrement from "./bookMovie/decrement.jpg";
 
 const Page_Logo = () => {
   return <img className="page_logo_img" src={pageLogo} alt="page logo" />;
@@ -23,6 +25,18 @@ const Page_Logo = () => {
 /* -------------------------------------BOOK MOVIE PAGE--------------- */
 const Dropdown = () => {
   return <img className="dropdown_icon" src={dropdown} alt="dropdown icon" />;
+};
+
+const Increment = () => {
+  return (
+    <img className="incr_decr_icon" src={increment} alt="increment logo" />
+  );
+};
+
+const Decrement = () => {
+  return (
+    <img className="incr_decr_icon" src={decrement} alt="decrement logo" />
+  );
 };
 
 /* -------------------------------------LOACATION PAGE--------------- */
@@ -144,6 +158,8 @@ export {
   F_WildRobot,
   Page_Logo,
   Dropdown,
+  Increment,
+  Decrement,
   City,
   Location,
   Clock,

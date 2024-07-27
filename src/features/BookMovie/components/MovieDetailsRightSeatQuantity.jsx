@@ -1,5 +1,6 @@
 import useBookStore from "../../../stores/book/book.store";
 import "./styles/MovieDetails.css";
+import { Increment, Decrement } from "../../../assets/index";
 
 const MovieDetailsRightSeatQuantity = () => {
   const { quantity, incrementQuantity, decrementQuantity } = useBookStore();
@@ -8,12 +9,12 @@ const MovieDetailsRightSeatQuantity = () => {
     <div className="num_seats">
       Number of Seats:
       <div className="quantity">
-        <span className="decrement" onClick={decrementQuantity}>
-          -
+        <span onClick={decrementQuantity}>
+          <Decrement />
         </span>
         <span>{quantity}</span>
-        <span className="increment" onClick={incrementQuantity}>
-          +
+        <span onClick={incrementQuantity}>
+          <Increment />
         </span>
       </div>
     </div>

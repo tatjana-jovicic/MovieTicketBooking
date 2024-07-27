@@ -86,6 +86,12 @@ button:focus-visible {
   filter: invert(1);
 }
 
+.incr_decr_icon {
+  width: 40%;
+  filter: invert(1);
+  cursor: pointer;
+}
+
 /* -------------------------------------HOME PAGE--------------- */
 .home_con_right_img {
   width: 30%;
