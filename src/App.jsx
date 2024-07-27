@@ -7,12 +7,17 @@ import HowToBook from "./features/HowToBook/HowToBook";
 import Contact from "./features/Contact/Contact";
 import Location from "./features/Location/Location";
 import MovieDetails from "./features/BookMovie/components/MovieDetails";
+import Notification from "./components/Notification/Notification";
+import useNotificationStore from "./stores/notification/notification.store.js";
 
 const App = () => {
+  const isOpen = useNotificationStore((state) => state.isOpen);
+
   return (
     <>
       <BrowserRouter>
         <Navigation />
+        {isOpen && <Notification />}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/book_movie" element={<BookMovie />} />
