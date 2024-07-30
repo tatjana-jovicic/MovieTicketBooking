@@ -31,17 +31,17 @@ export const movies = [
     starring: "Adam Driver, Marion Cotillard, Simon Helberg",
     video: "https://www.youtube.com/embed/dRuKrWbSzLA?si=gphRThGu_4LFVTRn",
     availableDates: {
-      "2024-07-25": [
+      "2024-08-05": [
         { time: "5:00 PM", hall: "A2", type: "2D", price: 13 },
         { time: "8:00 PM", hall: "A2", type: "2D", price: 13 },
         { time: "12:00 AM", hall: "A2", type: "2D", price: 13 },
       ],
-      "2024-07-26": [
+      "2024-08-06": [
         { time: "4:00 PM", hall: "A3", type: "2D", price: 13 },
         { time: "4:30 PM", hall: "A2", type: "3D", price: 15 },
         { time: "8:00 PM", hall: "A1", type: "3D", price: 15 },
       ],
-      "2024-07-27": [
+      "2024-08-08": [
         { time: "3:00 PM", hall: "A2", type: "standard", price: 10 },
         { time: "6:00 PM", hall: "A2", type: "standard", price: 10 },
         { time: "7:00 PM", hall: "B3", type: "standard", price: 10 },
