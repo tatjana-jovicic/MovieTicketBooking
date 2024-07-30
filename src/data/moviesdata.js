@@ -31,17 +31,17 @@ export const movies = [
     starring: "Adam Driver, Marion Cotillard, Simon Helberg",
     video: "https://www.youtube.com/embed/dRuKrWbSzLA?si=gphRThGu_4LFVTRn",
     availableDates: {
-      "2024-08-05": [
+      "2024-08-26": [
         { time: "5:00 PM", hall: "A2", type: "2D", price: 13 },
         { time: "8:00 PM", hall: "A2", type: "2D", price: 13 },
         { time: "12:00 AM", hall: "A2", type: "2D", price: 13 },
       ],
-      "2024-08-06": [
+      "2024-08-28": [
         { time: "4:00 PM", hall: "A3", type: "2D", price: 13 },
         { time: "4:30 PM", hall: "A2", type: "3D", price: 15 },
         { time: "8:00 PM", hall: "A1", type: "3D", price: 15 },
       ],
-      "2024-08-08": [
+      "2024-08-29": [
         { time: "3:00 PM", hall: "A2", type: "standard", price: 10 },
         { time: "6:00 PM", hall: "A2", type: "standard", price: 10 },
         { time: "7:00 PM", hall: "B3", type: "standard", price: 10 },
@@ -61,17 +61,17 @@ export const movies = [
     starring: "Jessica Chastain, John Malkovich",
     video: "https://www.youtube.com/embed/oRKQAk2Kwbg?si=BbM_KFXrLadpTBrQ",
     availableDates: {
-      "2024-07-24": [
+      "2024-08-24": [
         { time: "7:00 PM", hall: "A1", type: "standard", price: 10 },
         { time: "9:00 PM", hall: "A1", type: "standard", price: 10 },
         { time: "11:00 PM", hall: "A1", type: "standard", price: 10 },
       ],
-      "2024-07-25": [
+      "2024-08-25": [
         { time: "5:00 PM", hall: "A3", type: "standard", price: 10 },
         { time: "6:00 PM", hall: "A2", type: "standard", price: 10 },
         { time: "6:10 PM", hall: "A1", type: "standard", price: 10 },
       ],
-      "2024-07-27": [
+      "2024-08-27": [
         { time: "3:00 PM", hall: "A1", type: "standard", price: 10 },
         { time: "8:30 PM", hall: "A3", type: "standard", price: 10 },
         { time: "10:00 PM", hall: "B3", type: "standard", price: 10 },
@@ -90,17 +90,17 @@ export const movies = [
     starring: "Karl Urban, Zaris-Angel Hator",
     video: "https://www.youtube.com/embed/P-E-IGQCsPo?si=CuMvOJhCh6YbntqX",
     availableDates: {
-      "2024-07-25": [
+      "2024-08-25": [
         { time: "4:45 PM", hall: "A3", type: "2D", price: 13 },
         { time: "7:00 PM", hall: "A3", type: "2D", price: 13 },
         { time: "10:15 PM", hall: "A3", type: "2D", price: 13 },
       ],
-      "2024-07-26": [
+      "2024-08-26": [
         { time: "4:00 PM", hall: "B1", type: "3D", price: 15 },
         { time: "4:30 PM", hall: "B1", type: "3D", price: 15 },
         { time: "8:00 PM", hall: "B1", type: "3D", price: 15 },
       ],
-      "2024-07-27": [
+      "2024-08-27": [
         { time: "8:00 PM", hall: "B2", type: "3D", price: 15 },
         { time: "8:10 PM", hall: "A2", type: "3D", price: 15 },
         { time: "8:15 PM", hall: "B3", type: "2D", price: 13 },
@@ -119,17 +119,17 @@ export const movies = [
     starring: "Bob Peterson, Andrew Stanton",
     video: "https://www.youtube.com/embed/3JNLwlcPBPI?si=g0X-LWULr3PaDBXx",
     availableDates: {
-      "2024-07-23": [
+      "2024-08-23": [
         { time: "3:00 PM", hall: "B3", type: "3D", price: 15 },
         { time: "3:45 PM", hall: "A3", type: "3D", price: 15 },
         { time: "6:00 PM", hall: "A3", type: "3D", price: 15 },
       ],
-      "2024-07-24": [
+      "2024-08-24": [
         { time: "3:00 PM", hall: "B1", type: "3D", price: 15 },
         { time: "3:40 PM", hall: "A1", type: "3D", price: 15 },
         { time: "7:00 PM", hall: "A1", type: "3D", price: 15 },
       ],
-      "2024-07-28": [
+      "2024-08-28": [
         { time: "5:00 PM", hall: "A2", type: "3D", price: 15 },
         { time: "8:10 PM", hall: "A2", type: "3D", price: 15 },
         { time: "8:00 PM", hall: "B3", type: "3D", price: 15 },
@@ -149,17 +149,17 @@ export const movies = [
     starring: "Dylan DeVane, Tatum Bates ",
     video: "https://www.youtube.com/embed/qmGxKLyBtl0?si=qVyp1cFfM5TKrVbl",
     availableDates: {
-      "2024-07-23": [
+      "2024-08-23": [
         { time: "8:00 PM", hall: "B1", type: "standard", price: 10 },
         { time: "9:30 PM", hall: "A2", type: "standard", price: 10 },
         { time: "10:00 PM", hall: "A3", type: "standard", price: 10 },
       ],
-      "2024-07-26": [
+      "2024-08-26": [
         { time: "8:00 PM", hall: "B3", type: "standard", price: 10 },
         { time: "9:45 PM", hall: "B3", type: "standard", price: 10 },
         { time: "12:00 AM", hall: "B3", type: "standard", price: 10 },
       ],
-      "2024-07-30": [
+      "2024-08-30": [
         { time: "7:00 PM", hall: "A2", type: "standard", price: 10 },
         { time: "9:10 PM", hall: "A2", type: "standard", price: 10 },
         { time: "11:00 PM", hall: "A1", type: "standard", price: 10 },
@@ -178,17 +178,17 @@ export const movies = [
     starring: "Shailene Woodley, Ansel Elgort, Nat Wolff",
     video: "https://www.youtube.com/embed/9ItBvH5J6ss?si=wC9wD-jjWkFAw8g3",
     availableDates: {
-      "2024-07-22": [
+      "2024-08-22": [
         { time: "5:00 PM", hall: "B2", type: "standard", price: 10 },
         { time: "5:30 PM", hall: "A3", type: "standard", price: 10 },
         { time: "6:00 PM", hall: "A1", type: "standard", price: 10 },
       ],
-      "2024-07-23": [
+      "2024-08-23": [
         { time: "8:00 PM", hall: "B2", type: "standard", price: 10 },
         { time: "8:45 PM", hall: "B1", type: "standard", price: 10 },
         { time: "11:00 PM", hall: "B1", type: "standard", price: 10 },
       ],
-      "2024-07-24": [
+      "2024-08-24": [
         { time: "4:00 PM", hall: "A1", type: "standard", price: 10 },
         { time: "7:00 PM", hall: "A1", type: "standard", price: 10 },
         { time: "10:20 PM", hall: "A1", type: "standard", price: 10 },
@@ -207,17 +207,17 @@ export const movies = [
     starring: "Anne Hathaway, Nicholas Galitzine ",
     video: "https://www.youtube.com/embed/sef6dNsKxeA?si=7xiew1t1Y7ZUa9dU",
     availableDates: {
-      "2024-07-22": [
+      "2024-08-22": [
         { time: "5:00 PM", hall: "B2", type: "standard", price: 10 },
         { time: "5:30 PM", hall: "A2", type: "standard", price: 10 },
         { time: "6:00 PM", hall: "A3", type: "standard", price: 10 },
       ],
-      "2024-07-24": [
+      "2024-08-24": [
         { time: "8:00 PM", hall: "B2", type: "standard", price: 10 },
         { time: "8:45 PM", hall: "B1", type: "standard", price: 10 },
         { time: "10:30 PM", hall: "B2", type: "standard", price: 10 },
       ],
-      "2024-07-25": [
+      "2024-08-25": [
         { time: "7:00 PM", hall: "A1", type: "standard", price: 10 },
         { time: "7:00 PM", hall: "B1", type: "standard", price: 10 },
         { time: "7:10 PM", hall: "A2", type: "standard", price: 10 },
@@ -236,17 +236,17 @@ export const movies = [
     starring: "Lupita Nyong'o, Pedro Pascal ",
     video: "https://www.youtube.com/embed/67vbA5ZJdKQ?si=y_yiPYZaTh6kRI_9",
     availableDates: {
-      "2024-07-26": [
+      "2024-08-26": [
         { time: "5:00 PM", hall: "B2", type: "2D", price: 13 },
         { time: "5:45 PM", hall: "A2", type: "2D", price: 13 },
         { time: "6:15 PM", hall: "A3", type: "2D", price: 13 },
       ],
-      "2024-07-27": [
+      "2024-08-27": [
         { time: "6:00 PM", hall: "B2", type: "2D", price: 13 },
         { time: "8:10 PM", hall: "B1", type: "2D", price: 13 },
         { time: "8:30 PM", hall: "B2", type: "2D", price: 13 },
       ],
-      "2024-07-28": [
+      "2024-08-28": [
         { time: "5:00 PM", hall: "A1", type: "2D", price: 13 },
         { time: "7:00 PM", hall: "A3", type: "2D", price: 13 },
         { time: "7:10 PM", hall: "A2", type: "2D", price: 13 },
@@ -265,17 +265,17 @@ export const movies = [
     starring: "Dwayne Johnson, Ryan Reynolds, Gal Gadot ",
     video: "https://www.youtube.com/embed/Pj0wz7zu3Ms?si=nAC50riJdhX-HyC9",
     availableDates: {
-      "2024-07-26": [
+      "2024-08-25": [
         { time: "5:00 PM", hall: "A2", type: "standard", price: 10 },
         { time: "7:30 PM", hall: "A2", type: "standard", price: 10 },
         { time: "6:15 PM", hall: "A1", type: "standard", price: 10 },
       ],
-      "2024-07-27": [
+      "2024-08-27": [
         { time: "6:00 PM", hall: "B2", type: "standard", price: 10 },
         { time: "8:00 PM", hall: "B3", type: "standard", price: 10 },
         { time: "8:20 PM", hall: "B2", type: "standard", price: 10 },
       ],
-      "2024-07-28": [
+      "2024-08-28": [
         { time: "6:00 PM", hall: "A1", type: "standard", price: 10 },
         { time: "8:10 PM", hall: "A1", type: "standard", price: 10 },
         { time: "10:30 PM", hall: "A1", type: "standard", price: 10 },
@@ -294,17 +294,17 @@ export const movies = [
     starring: "Birkan Sokullu, Esra Bilgiç, Firat Taniş",
     video: "https://www.youtube.com/embed/f77agh-CZ-c?si=hkr5KsyJIapCAHYp",
     availableDates: {
-      "2024-07-23": [
+      "2024-08-23": [
         { time: "9:00 PM", hall: "A3", type: "standard", price: 10 },
         { time: "11:00 PM", hall: "A3", type: "standard", price: 10 },
         { time: "10:15 PM", hall: "A1", type: "standard", price: 10 },
       ],
-      "2024-07-24": [
+      "2024-08-25": [
         { time: "10:00 PM", hall: "A3", type: "standard", price: 10 },
         { time: "8:00 PM", hall: "A2", type: "standard", price: 10 },
         { time: "10:00 PM", hall: "A2", type: "standard", price: 10 },
       ],
-      "2024-07-27": [
+      "2024-08-27": [
         { time: "9:00 PM", hall: "B2", type: "standard", price: 10 },
         { time: "11:00 PM", hall: "B2", type: "standard", price: 10 },
         { time: "10:30 PM", hall: "B3", type: "standard", price: 10 },
@@ -323,17 +323,17 @@ export const movies = [
     starring: "Freida Pinto, Ṣọpẹ Dìrísù, Oliver Jackson-Cohen",
     video: "https://www.youtube.com/embed/4ONCEOWbl4s?si=3fDYo8uTH14X9EsC",
     availableDates: {
-      "2024-07-23": [
+      "2024-08-23": [
         { time: "10:00 PM", hall: "A2", type: "standard", price: 10 },
         { time: "11:00 PM", hall: "A1", type: "standard", price: 10 },
         { time: "12:15 AM", hall: "A2", type: "standard", price: 10 },
       ],
-      "2024-07-24": [
+      "2024-08-24": [
         { time: "10:00 PM", hall: "A2", type: "standard", price: 10 },
         { time: "8:00 PM", hall: "A1", type: "standard", price: 10 },
         { time: "10:20 PM", hall: "A1", type: "standard", price: 10 },
       ],
-      "2024-07-27": [
+      "2024-08-27": [
         { time: "9:00 PM", hall: "B3", type: "standard", price: 10 },
         { time: "9:00 PM", hall: "B1", type: "standard", price: 10 },
         { time: "9:30 PM", hall: "B2", type: "standard", price: 10 },
@@ -352,17 +352,17 @@ export const movies = [
     starring: "Jamie Lee Curtis, Andi Matichak, Rohan Campbell ",
     video: "https://www.youtube.com/embed/i_mAWKyfj6c?si=N3TUACQZC6zCZqBz",
     availableDates: {
-      "2024-07-27": [
+      "2024-08-24": [
         { time: "7:30 PM", hall: "A1", type: "standard", price: 10 },
         { time: "9:40 PM", hall: "A1", type: "standard", price: 10 },
         { time: "11:50 PM", hall: "A1", type: "standard", price: 10 },
       ],
-      "2024-07-28": [
+      "2024-08-28": [
         { time: "7:30 PM", hall: "A2", type: "standard", price: 10 },
         { time: "9:40 PM", hall: "A2", type: "standard", price: 10 },
         { time: "11:50 PM", hall: "A2", type: "standard", price: 10 },
       ],
-      "2024-07-29": [
+      "2024-08-29": [
         { time: "9:00 PM", hall: "B3", type: "standard", price: 10 },
         { time: "10:00 PM", hall: "B1", type: "standard", price: 10 },
         { time: "12:15 AM", hall: "B1", type: "standard", price: 10 },
@@ -381,17 +381,17 @@ export const movies = [
     starring: "Elli Müller Osborne, Liv Mjönes, Arthur Hakalahti",
     video: "https://www.youtube.com/embed/6sxnOLRGkhw?si=_CGlPfBlHgUvgh5O",
     availableDates: {
-      "2024-07-29": [
+      "2024-08-25": [
         { time: "7:30 PM", hall: "B3", type: "standard", price: 10 },
         { time: "9:30 PM", hall: "B2", type: "standard", price: 10 },
         { time: "11:30 PM", hall: "B2", type: "standard", price: 10 },
       ],
-      "2024-07-30": [
+      "2024-08-30": [
         { time: "12:00 AM", hall: "A2", type: "standard", price: 10 },
         { time: "9:40 PM", hall: "A1", type: "standard", price: 10 },
         { time: "11:50 PM", hall: "A1", type: "standard", price: 10 },
       ],
-      "2024-07-31": [
+      "2024-08-31": [
         { time: "9:00 PM", hall: "B1", type: "standard", price: 10 },
         { time: "10:00 PM", hall: "B3", type: "standard", price: 10 },
         { time: "12:00 AM", hall: "B3", type: "standard", price: 10 },
@@ -410,17 +410,17 @@ export const movies = [
     starring: "Jason Momoa, Amber Heard, Willem Dafoe",
     video: "https://www.youtube.com/embed/2wcj6SrX4zw?si=8sTWC-9BCXE807OE",
     availableDates: {
-      "2024-07-29": [
+      "2024-08-29": [
         { time: "7:30 PM", hall: "B1", type: "standard", price: 10 },
         { time: "6:30 PM", hall: "B2", type: "standard", price: 10 },
         { time: "9:00 PM", hall: "B2", type: "standard", price: 10 },
       ],
-      "2024-07-31": [
+      "2024-08-30": [
         { time: "9:00 PM", hall: "A3", type: "standard", price: 10 },
         { time: "9:40 PM", hall: "A1", type: "standard", price: 10 },
         { time: "12:30 PM", hall: "A3", type: "standard", price: 10 },
       ],
-      "2024-08-01": [
+      "2024-08-31": [
         { time: "9:00 PM", hall: "B1", type: "standard", price: 10 },
         { time: "10:00 PM", hall: "B2", type: "standard", price: 10 },
         { time: "11:20 PM", hall: "B3", type: "standard", price: 10 },
@@ -439,17 +439,17 @@ export const movies = [
     starring: "Tom Holland, Mark Wahlberg, Antonio Banderas",
     video: "https://www.youtube.com/embed/4wCH1K-ckZw?si=roLfOqfiq-H9qVXg",
     availableDates: {
-      "2024-07-29": [
+      "2024-08-23": [
         { time: "6:30 PM", hall: "B2", type: "standard", price: 10 },
         { time: "7:30 PM", hall: "B3", type: "standard", price: 10 },
         { time: "9:00 PM", hall: "B1", type: "standard", price: 10 },
       ],
-      "2024-07-31": [
+      "2024-08-24": [
         { time: "9:00 PM", hall: "A2", type: "standard", price: 10 },
         { time: "11:15 PM", hall: "A2", type: "standard", price: 10 },
         { time: "10:30 PM", hall: "A1", type: "standard", price: 10 },
       ],
-      "2024-08-01": [
+      "2024-08-26": [
         { time: "8:00 PM", hall: "B3", type: "standard", price: 10 },
         { time: "10:10 PM", hall: "B3", type: "standard", price: 10 },
         { time: "11:15 PM", hall: "B2", type: "standard", price: 10 },
@@ -468,17 +468,17 @@ export const movies = [
     starring: "Jimmy O. Yang, Bowen Yang, Jolie Hoang-Rappaport",
     video: "https://www.youtube.com/embed/-Ao79QJNE-s?si=n2U-8PXNvtjOtluj",
     availableDates: {
-      "2024-07-30": [
+      "2024-08-24": [
         { time: "6:30 PM", hall: "B1", type: "3D", price: 15 },
         { time: "6:30 PM", hall: "B2", type: "3D", price: 15 },
         { time: "8:10 PM", hall: "B2", type: "standard", price: 10 },
       ],
-      "2024-08-01": [
+      "2024-08-25": [
         { time: "5:00 PM", hall: "A1", type: "standard", price: 10 },
         { time: "6:50 PM", hall: "A1", type: "3D", price: 15 },
         { time: "8:15 PM", hall: "A3", type: "3D", price: 15 },
       ],
-      "2024-08-02": [
+      "2024-08-27": [
         { time: "8:00 PM", hall: "B2", type: "3D", price: 15 },
         { time: "9:50 PM", hall: "B2", type: "2D", price: 13 },
         { time: "10:15 PM", hall: "B1", type: "2D", price: 13 },
@@ -497,17 +497,17 @@ export const movies = [
     starring: "Kevin Hart, Gugu Mbatha-Raw, Vincent D'Onofrio",
     video: "https://www.youtube.com/embed/m2L-Sa_6MU0?si=obhGVs8X2vf7wJWF",
     availableDates: {
-      "2024-07-30": [
+      "2024-08-28": [
         { time: "7:30 PM", hall: "A1", type: "standard", price: 10 },
         { time: "8:30 PM", hall: "A2", type: "standard", price: 10 },
         { time: "9:00 PM", hall: "B2", type: "standard", price: 10 },
       ],
-      "2024-07-31": [
+      "2024-08-30": [
         { time: "6:00 PM", hall: "B1", type: "standard", price: 10 },
         { time: "8:50 PM", hall: "A1", type: "standard", price: 10 },
         { time: "10:15 PM", hall: "A3", type: "standard", price: 10 },
       ],
-      "2024-08-02": [
+      "2024-08-31": [
         { time: "11:00 PM", hall: "A2", type: "standard", price: 10 },
         { time: "11:30 PM", hall: "B3", type: "standard", price: 10 },
         { time: "10:15 PM", hall: "B1", type: "standard", price: 10 },
@@ -526,17 +526,17 @@ export const movies = [
     starring: "Jennifer Garner, Ed Helms, Emma Myers",
     video: "https://www.youtube.com/embed/SWh4c9EVqGM?si=J89v4ih_QXdyjQgk",
     availableDates: {
-      "2024-07-25": [
+      "2024-08-25": [
         { time: "7:00 PM", hall: "A2", type: "standard", price: 10 },
         { time: "8:50 PM", hall: "A1", type: "standard", price: 10 },
         { time: "9:00 PM", hall: "B1", type: "standard", price: 10 },
       ],
-      "2024-07-27": [
+      "2024-08-27": [
         { time: "11:00 PM", hall: "B2", type: "standard", price: 10 },
         { time: "8:00 PM", hall: "A3", type: "standard", price: 10 },
         { time: "10:00 PM", hall: "A3", type: "standard", price: 10 },
       ],
-      "2024-07-28": [
+      "2024-08-28": [
         { time: "12:00 AM", hall: "A1", type: "standard", price: 10 },
         { time: "9:00 PM", hall: "B3", type: "standard", price: 10 },
         { time: "11:10 PM", hall: "B3", type: "standard", price: 10 },
@@ -555,17 +555,17 @@ export const movies = [
     starring: "Gina Rodriguez, Damon Wayans Jr., Tom Ellis",
     video: "https://www.youtube.com/embed/8gH6AEBwEAw?si=7Xg4UliaLHr2iLcG",
     availableDates: {
-      "2024-07-26": [
+      "2024-08-26": [
         { time: "7:00 PM", hall: "A2", type: "standard", price: 10 },
         { time: "8:00 PM", hall: "A3", type: "standard", price: 10 },
         { time: "9:00 PM", hall: "B2", type: "standard", price: 10 },
       ],
-      "2024-07-27": [
+      "2024-08-27": [
         { time: "11:00 PM", hall: "B2", type: "standard", price: 10 },
         { time: "8:00 PM", hall: "A1", type: "standard", price: 10 },
         { time: "10:00 PM", hall: "A1", type: "standard", price: 10 },
       ],
-      "2024-07-31": [
+      "2024-08-31": [
         { time: "11:00 PM", hall: "A2", type: "standard", price: 10 },
         { time: "9:00 PM", hall: "B2", type: "standard", price: 10 },
         { time: "11:10 PM", hall: "B2", type: "standard", price: 10 },
