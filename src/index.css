@@ -79,20 +79,9 @@ button:focus-visible {
   width: 50%;
   max-width: 80px;
 }
-/* -------------------------------------BOOK MOVIE PAGE--------------- */
-.dropdown_icon {
-  width: 15px;
-  margin-left: 10px;
-  filter: invert(1);
-}
-
-.incr_decr_icon {
-  width: 40%;
-  filter: invert(1);
-  cursor: pointer;
-}
 
 /* -------------------------------------HOME PAGE--------------- */
+
 .home_con_right_img {
   width: 30%;
   max-width: 350px;
@@ -113,6 +102,34 @@ button:focus-visible {
     width: 34%;
   }
 }
+
+/* -------------------------------------BOOK MOVIE PAGE--------------- */
+.dropdown_icon {
+  width: 15px;
+  margin-left: 10px;
+  filter: invert(1);
+}
+
+.incr_decr_icon {
+  width: 40%;
+  filter: invert(1);
+  cursor: pointer;
+}
+
+/* -------------------------------------HOW TO BOOK PAGE--------------- */
+
+.image_con_img {
+  max-width: 300px;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+
+@media only screen and (max-width: 400px) {
+  .image_con_img {
+    max-width: 270px;
+  }
+}
+
 /* -------------------------------------CONTACT PAGE--------------- */
 .contact_page_left_logo {
   margin-top: 6px;
